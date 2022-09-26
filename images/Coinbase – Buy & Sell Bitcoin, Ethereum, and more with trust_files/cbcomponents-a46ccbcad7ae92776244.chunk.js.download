@@ -1,0 +1,669 @@
+(("undefined"!==typeof self?self:this).webpackJsonp=("undefined"!==typeof self?self:this).webpackJsonp||[]).push([[61],{"2yZc":function(e,t,i){"use strict";i.d(t,"a",(function(){return js}));var n=i("FyRH"),a=i.n(n),o=i("gN02"),s=i("hWgQ"),l=i("ZdST"),r=i("UutA"),c=i("xCbF"),d=i.n(c),p=i("cI9F"),m=i("D/Mn"),u=i("IPNR"),b=i("f7Z+"),g=i("aKSz");let f,h,y,x,w,k,v,T,I,L,C,j,D,E,M,$,A,O,_,N,K,S,B,U,F,H,P,W,z,R,q,G,Y,J,V,Q,Z,X,ee,te,ie,ne,ae,oe,se,le,re,ce,de,pe,me,ue,be,ge,fe,he,ye,xe,we,ke,ve,Te,Ie,Le,Ce,je,De,Ee,Me,$e,Ae,Oe,_e,Ne,Ke,Se,Be,Ue,Fe,He,Pe,We,ze,Re,qe,Ge,Ye,Je,Ve,Qe,Ze,Xe,et,tt,it,nt,at,ot,st,lt,rt,ct,dt=e=>e;const pt=["children","loading","disabled","onClick","value","size","type","fullWidth","className"];let mt,ut,bt,gt,ft,ht,yt,xt,wt,kt,vt,Tt,It,Lt,Ct,jt,Dt,Et,Mt,$t,At,Ot,_t,Nt,Kt,St,Bt,Ut,Ft,Ht,Pt,Wt,zt,Rt,qt,Gt,Yt,Jt,Vt,Qt,Zt,Xt,ei,ti,ii,ni,ai,oi,si,li,ri,ci,di,pi,mi,ui,bi,gi,fi,hi,yi,xi,wi,ki,vi,Ti,Ii,Li,Ci,ji,Di,Ei,Mi,$i,Ai,Oi,_i,Ni,Ki,Si,Bi,Ui,Fi,Hi,Pi,Wi,zi,Ri,qi,Gi,Yi,Ji,Vi,Qi,Zi,Xi,en,tn,nn,an,on,sn;function ln(e,t){if(null==e)return{};var i,n,a=function(e,t){if(null==e)return{};var i,n,a={},o=Object.keys(e);for(n=0;n<o.length;n++)i=o[n],t.indexOf(i)>=0||(a[i]=e[i]);return a}(e,t);if(Object.getOwnPropertySymbols){var o=Object.getOwnPropertySymbols(e);for(n=0;n<o.length;n++)i=o[n],t.indexOf(i)>=0||Object.prototype.propertyIsEnumerable.call(e,i)&&(a[i]=e[i])}return a}function rn(e,t){return function(e){if(Array.isArray(e))return e}(e)||function(e,t){var i=null==e?null:"undefined"!==typeof Symbol&&e[Symbol.iterator]||e["@@iterator"];if(null==i)return;var n,a,o=[],s=!0,l=!1;try{for(i=i.call(e);!(s=(n=i.next()).done)&&(o.push(n.value),!t||o.length!==t);s=!0);}catch(r){l=!0,a=r}finally{try{s||null==i.return||i.return()}finally{if(l)throw a}}return o}(e,t)||function(e,t){if(!e)return;if("string"===typeof e)return cn(e,t);var i=Object.prototype.toString.call(e).slice(8,-1);"Object"===i&&e.constructor&&(i=e.constructor.name);if("Map"===i||"Set"===i)return Array.from(e);if("Arguments"===i||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(i))return cn(e,t)}(e,t)||function(){throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}()}function cn(e,t){(null==t||t>e.length)&&(t=e.length);for(var i=0,n=new Array(t);i<t;i++)n[i]=e[i];return n}function dn(e,t){var i=Object.keys(e);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(e);t&&(n=n.filter((function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable}))),i.push.apply(i,n)}return i}function pn(e){for(var t=1;t<arguments.length;t++){var i=null!=arguments[t]?arguments[t]:{};t%2?dn(Object(i),!0).forEach((function(t){mn(e,t,i[t])})):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(i)):dn(Object(i)).forEach((function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(i,t))}))}return e}function mn(e,t,i){return t in e?Object.defineProperty(e,t,{value:i,enumerable:!0,configurable:!0,writable:!0}):e[t]=i,e}const un=Object(r.d)(mt||(mt=f||(f=dt`
+  ${0}
+`)),d.a),bn="#0052FF",gn="#FFFFFF",fn={lightGrey:"#F1F3F5",darkBlue:"#0A46E4",blue80:"rgba(22, 82, 240, 0.8)"},hn={hidden:-1,normal:0,elevated:1,high:2,backdrop:999,overlay:1e3,top:1001},yn={tiny:"2px",small:"4px",medium:"8px",large:"16px",huge:"24px",enormous:"32px"},xn='-apple-system,\nBlinkMacSystemFont,\n"Segoe UI",\n"Roboto",\n"Oxygen",\n"Ubuntu",\n"Cantarell",\n"Fira Sans",\n"Droid Sans",\n"Helvetica Neue",\nsans-serif',wn={background:gn,backgroundAlt:fn.lightGrey,text:"#050F19",textLight:"rgba(17,51,83,0.6)",textAccent:bn,textHover:bn,textAccentHover:fn.blue80,border:"#ECEFF1",buttonFill:bn,buttonFillHover:fn.darkBlue,buttonText:gn,secondaryButtonFill:gn,secondaryButtonText:bn,white:gn,blue:bn},kn={border:`1px solid ${wn.border}`,noRadius:"0px",subtleRadius:"2px",borderRadius:`${yn.small}`,mediumBorderRadius:`${yn.medium}`,largeBorderRadius:`${yn.large}`,radius:`${yn.small}`,insetRadius:"3px"},vn={typeVariant:!1,size:yn,fontSize:{tiny:"12px",small:"14px",medium:"16px",large:"18px",huge:"24px",super:"32px",mega:"48px"},fontWeight:{ultraLight:400,thin:400,light:400,regular:400,medium:400,demiBold:500,bold:600,heavy:600},fontFamily:{regular:`'CoinbaseSans', ${xn}`,sans:`'CoinbaseSans', ${xn}`,text:`'CoinbaseText', ${xn}`,display:`'CoinbaseDisplay', ${xn}`,monospace:{fontFamily:'\n  "Monaco",\n  monospace;'}.fontFamily},color:pn(pn({},fn),wn),border:kn,layout:{extraWide:1920,width:1180,padding:24},breakpoints:{giant:1170,desktop:992,tablet:768,phone:560},zIndex:hn,_snapshotDisplayName:"defaultTheme",logoKey:"blue"},Tn="#FFFFFF",In="#1652F0",Ln="#A5C1FD",Cn="#FFFFFF",jn="#3773f5",Dn="#0A0B0D",En="#1C2F4E",Mn={night:{color:{background:"#0D1B32",border:En,text:"#FFFFFF",textAccent:"#1652F0",textLight:"#676A70",backgroundAlt:En},logoKey:"white"},blue:{color:{background:In,border:"#2460E1",text:Tn,textAccent:Tn,textLight:Tn,backgroundAlt:In,textHover:Ln,textAccentHover:Ln,buttonFill:Tn,buttonFillHover:"rgba(255,255,255,0.8)",buttonText:In,secondaryButtonFill:In,secondaryButtonText:Tn},logoKey:"white"},dark:{color:{background:Dn,border:`${"#8A919E"}20`,text:Cn,textAccent:jn,textAccentHover:jn,textLight:Cn,textHover:jn,backgroundAlt:Dn,buttonFill:jn,buttonFillHover:`${jn}92`,buttonText:Dn,secondaryButtonFill:Dn,secondaryButtonFillHover:`${Dn}98`,secondaryButtonText:Cn},logoKey:"white"}},$n=e=>{const t=Mn[e];return t?pn(pn(pn({},vn),t),{},{color:pn(pn({},vn.color),t.color)}):vn},An=Object(n.createContext)(void 0),On=e=>{const t=Object(n.useRef)(e);return Object(n.useMemo)((()=>t.current()),[t])};function _n(e){const t=Boolean("undefined"!==typeof window&&window.matchMedia)?window.matchMedia(e):void 0;return Boolean(t&&t.addListener&&t.removeListener)?t:void 0}const Nn=e=>{const t=_n(e),i=({matches:e})=>{n.forEach((t=>t(e)))};let n=[];return{addListener:e=>{t&&(n.push(e),1===n.length&&t.addListener(i))},removeListener:e=>{t&&(n=n.filter((t=>t!==e)),0===n.length&&t.removeListener(i))},hasListeners:()=>n.length>0}},Kn=(()=>{const e={};return(t,i)=>{e[t]||(e[t]=Nn(t));const n=e[t];n.addListener(i);return()=>{n.removeListener(i),n.hasListeners()||delete e[t]}}})(),Sn=({query:e,initialValue:t})=>{const i=On((()=>{var t;return(null===(t=_n(e))||void 0===t?void 0:t.matches)||!1})),a=On((()=>void 0===t?i:t)),o=rn(Object(n.useState)(a),2),s=o[0],l=o[1];return Object(n.useEffect)((()=>{l(i)}),[]),Object(n.useEffect)((()=>Kn(e,l)),[e]),s},Bn=e=>{const t=Object(n.useContext)(An),i=Object(n.useContext)(r.b).breakpoints,a=`(max-width: ${e||i.tablet}px)`;return Sn({query:a,initialValue:t})},Un=["prices","learn","individuals","businesses","developers","company"],Fn="b0783754-6f36-4a2f-84a2-b4380c1ad2f7",Hn=1050,Pn={blue:"https://images.ctfassets.net/q5ulk4bp65r7/7CVqRBllUwseIXWjHInAhV/13238df422bdb9c0d485bda6caa90385/coinbase-logo-svg.svg",white:"https://images.ctfassets.net/q5ulk4bp65r7/7kIsjZt3oxnEIndCVW28pQ/35b4e345e55abddb4e025aae8bd88248/Vector__4_.svg",blueNew:"https://images.ctfassets.net/q5ulk4bp65r7/3TBS4oVkD1ghowTqVQJlqj/2dfd4ea3b623a7c0d8deb2ff445dee9e/Consumer_Wordmark.svg",whiteNew:"https://images.ctfassets.net/q5ulk4bp65r7/3d0nJDFOq4TdewlmTxQ6Eb/e94dcbc5ac72d84e812bccc8561c6b62/Consumer_Wordmark_White.svg"},Wn={signInUrl:"",signUpUrl:"",onClickSignIn:void 0,onClickSignUp:void 0,productName:"",productUrl:"",onClickProductName:void 0,isJapan:!1,isIndia:!1,useNewLogo:!1,showSignInButton:!0,showSignUpButton:!0,showGetStartedButtonOnMobile:!0,showCoinbaseBytes:!1},zn=Object(n.createContext)(Wn),Rn="https://www.coinbase.com",qn="https://accounts.coinbase.com",Gn=Object(n.createContext)({baseUrl:Rn,coinbaseAccountsBaseUrl:qn});function Yn(){return Yn=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var i=arguments[t];for(var n in i)Object.prototype.hasOwnProperty.call(i,n)&&(e[n]=i[n])}return e},Yn.apply(this,arguments)}const Jn=(e,t,i)=>{if(p.config.platform!==p.PlatformName.unknown)return Object(p.logEvent)(e,t,i)},Vn=Object(n.forwardRef)((({children:e,to:t,className:i,logEvents:o,title:s,testID:l,onClick:r,onKeyDown:c},d)=>{const m=Object(n.useContext)(Gn),u=m.baseUrl,b=m.onUrlChange,g=(({url:e,baseUrl:t})=>{if(e.startsWith(Rn)&&t!==Rn){const i=e.replace(Rn,t);return`${"/"!==i[0]?"/":""}${i}`}return e})({url:t,baseUrl:u}),f={};return r||(f.href=g),a.a.createElement(Qn,Yn({ref:d,as:r?"span":"a",onClick:()=>{o&&Jn("global_nav_link",{action:p.ActionType.click,componentType:p.ComponentType.link,loggingId:Fn,key:t||s||"unknown"}),b&&b(g),r&&r()},onMouseEnter:()=>{o&&Jn("global_nav_link",{action:p.ActionType.hover,componentType:p.ComponentType.link,loggingId:Fn,key:t})},className:i,title:s,onKeyDown:c,"data-testid":l},f),e)})),Qn=r.f.a.withConfig({displayName:"esm__StyledLink3",componentId:"c0ijgk-0"})(ut||(ut=h||(h=dt`
+  text-decoration: none;
+  cursor: pointer;
+  font-family: ${0};
+  color: ${0};
+`)),(({theme:e})=>e.fontFamily.sans),(({theme:e})=>e.color.textAccent)),Zn=Vn;r.f.h1.withConfig({displayName:"esm",componentId:"c0ijgk-1"})(bt||(bt=y||(y=dt`
+  margin: 0;
+  font-size: 52px;
+  line-height: 64px;
+  font-weight: 700;
+  font-family: ${0};
+  color: ${0};
+`)),(({theme:e})=>e.fontFamily.display),(({theme:e})=>e.color.text)),r.f.h2.withConfig({displayName:"esm",componentId:"c0ijgk-2"})(gt||(gt=x||(x=dt`
+  margin: 0;
+  font-size: 44px;
+  line-height: 52px;
+  font-weight: 700;
+  font-family: ${0};
+  color: ${0};
+`)),(({theme:e})=>e.fontFamily.display),(({theme:e})=>e.color.text)),r.f.h2.withConfig({displayName:"esm",componentId:"c0ijgk-3"})(ft||(ft=w||(w=dt`
+  margin: 0;
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: 700;
+  font-family: ${0};
+  color: ${0};
+`)),(({theme:e})=>e.fontFamily.display),(({theme:e})=>e.color.text)),r.f.h3.withConfig({displayName:"esm",componentId:"c0ijgk-4"})(ht||(ht=k||(k=dt`
+  margin: 0;
+  font-size: 24px;
+  line-height: 44px;
+  font-weight: 700;
+  font-family: ${0};
+  color: ${0};
+`)),(({theme:e})=>e.fontFamily.display),(({theme:e})=>e.color.text)),r.f.h3.withConfig({displayName:"esm",componentId:"c0ijgk-5"})(yt||(yt=v||(v=dt`
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: ${0};
+  color: ${0};
+`)),(({theme:e})=>e.fontFamily.sans),(({theme:e})=>e.color.text)),r.f.p.withConfig({displayName:"esm",componentId:"c0ijgk-6"})(xt||(xt=T||(T=dt`
+  margin: 0;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 400;
+  font-family: ${0};
+  color: ${0};
+`)),(({theme:e})=>e.fontFamily.sans),(({theme:e})=>e.color.text)),r.f.p.withConfig({displayName:"esm",componentId:"c0ijgk-7"})(wt||(wt=I||(I=dt`
+  margin: 0;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+  font-family: ${0};
+  color: ${0};
+`)),(({theme:e})=>e.fontFamily.sans),(({theme:e})=>e.color.text)),r.f.h1.withConfig({displayName:"esm",componentId:"c0ijgk-8"})(kt||(kt=L||(L=dt`
+  margin: 0;
+  font-size: 64px;
+  line-height: 72px;
+  font-weight: 400;
+  font-family: ${0};
+  color: ${0};
+`)),(({theme:e})=>e.fontFamily.display),(({theme:e})=>e.color.text)),r.f.h2.withConfig({displayName:"esm",componentId:"c0ijgk-9"})(vt||(vt=C||(C=dt`
+  margin: 0;
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: 400;
+  font-family: ${0};
+  color: ${0};
+`)),(({theme:e})=>e.fontFamily.display),(({theme:e})=>e.color.text)),r.f.h2.withConfig({displayName:"esm",componentId:"c0ijgk-10"})(Tt||(Tt=j||(j=dt`
+  margin: 0;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 500;
+  font-family: ${0};
+  color: ${0};
+`)),(({theme:e})=>e.fontFamily.display),(({theme:e})=>e.color.text)),r.f.h2.withConfig({displayName:"esm",componentId:"c0ijgk-11"})(It||(It=D||(D=dt`
+  margin: 0;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 400;
+  font-family: ${0};
+  color: ${0};
+`)),(({theme:e})=>e.fontFamily.display),(({theme:e})=>e.color.text)),r.f.h3.withConfig({displayName:"esm",componentId:"c0ijgk-12"})(Lt||(Lt=E||(E=dt`
+  margin: 0;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  font-family: ${0};
+  color: ${0};
+`)),(({theme:e})=>e.fontFamily.sans),(({theme:e})=>e.color.text));const Xn=r.f.h4.withConfig({displayName:"esm__Headline",componentId:"c0ijgk-13"})(Ct||(Ct=M||(M=dt`
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  font-family: ${0};
+  color: ${0};
+`)),(({theme:e})=>e.fontFamily.sans),(({theme:e})=>e.color.text)),ea=r.f.p.withConfig({displayName:"esm__Body",componentId:"c0ijgk-14"})(jt||(jt=$||($=dt`
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: ${0};
+  color: ${0};
+`)),(({theme:e})=>e.fontFamily.sans),(({theme:e})=>e.color.text)),ta=r.f.span.withConfig({displayName:"esm__Label1",componentId:"c0ijgk-15"})(Dt||(Dt=A||(A=dt`
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 600;
+  font-family: ${0};
+  color: ${0};
+`)),(({theme:e})=>e.fontFamily.sans),(({theme:e})=>e.color.text));r.f.span.withConfig({displayName:"esm",componentId:"c0ijgk-16"})(Et||(Et=O||(O=dt`
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: ${0};
+  color: ${0};
+`)),(({theme:e})=>e.fontFamily.sans),(({theme:e})=>e.color.text)),r.f.span.withConfig({displayName:"esm",componentId:"c0ijgk-17"})(Mt||(Mt=_||(_=dt`
+  margin: 0;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: ${0};
+  color: ${0};
+`)),(({theme:e})=>e.fontFamily.text),(({theme:e})=>e.color.text)),r.f.p.withConfig({displayName:"esm",componentId:"c0ijgk-18"})($t||($t=N||(N=dt`
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: ${0};
+  color: ${0};
+`)),(({theme:e})=>e.fontFamily.text),(({theme:e})=>e.color.text));const ia=Object(r.f)(ta).withConfig({displayName:"esm__BoldLabel",componentId:"c0ijgk-19"})(At||(At=K||(K=dt`
+  font-weight: 500;
+  line-height: 16px;
+  color: ${0};
+  &:hover {
+    color: ${0};
+  }
+`)),(e=>e.theme.color.text),(e=>e.theme.color.text)),na=Object(r.f)(Xn).withConfig({displayName:"esm__HeadlineLight",componentId:"c0ijgk-20"})(Ot||(Ot=S||(S=dt`
+  font-weight: 500;
+  line-height: 16px;
+`))),aa=Object(r.f)(ea).withConfig({displayName:"esm__NavBody",componentId:"c0ijgk-21"})(_t||(_t=B||(B=dt`
+  line-height: 16px;
+`))),oa=({title:e,description:t,linkText:i,url:n})=>a.a.createElement(la,null,a.a.createElement(na,null,e),a.a.createElement(ra,null,t),i&&n&&a.a.createElement(ca,{logEvents:!0,to:n,title:i},a.a.createElement(da,null,i))),sa=Object(n.memo)(oa),la=r.f.div.withConfig({displayName:"esm__DescriptionColumn",componentId:"c0ijgk-22"})(Nt||(Nt=U||(U=dt`
+  flex: 1;
+  max-width: 320px;
+`))),ra=Object(r.f)(ea).withConfig({displayName:"esm__BodyText",componentId:"c0ijgk-23"})(Kt||(Kt=F||(F=dt`
+  margin-top: 8px;
+`))),ca=Object(r.f)(Zn).withConfig({displayName:"esm__StyledLink2",componentId:"c0ijgk-24"})(St||(St=H||(H=dt`
+  display: inline-flex;
+  margin-top: 22px;
+`))),da=Object(r.f)(na).withConfig({displayName:"esm__HeadlineLinkText",componentId:"c0ijgk-25"})(Bt||(Bt=P||(P=dt`
+  color: ${0};
+  &:hover {
+    color: ${0};
+  }
+`)),(e=>e.theme.color.textAccent),(({theme:e})=>e.color.textAccentHover)),pa=r.f.div.withConfig({displayName:"esm__ColumnWrapper",componentId:"c0ijgk-26"})(Ut||(Ut=W||(W=dt`
+  flex: 0;
+  display: grid;
+  grid-template-columns: repeat(${0}, max-content);
+  column-gap: ${0}px;
+  row-gap: ${0}px;
+  grid-auto-flow: row;
+  justify-content: end;
+  margin-right: 60px;
+  align-items: flex-start;
+`)),(({columns:e})=>e||2),34,20),ma=Object(r.f)(aa).withConfig({displayName:"esm__DescriptionText",componentId:"c0ijgk-27"})(Ft||(Ft=z||(z=dt`
+  margin-top: 4px;
+  display: inline-block;
+  color: ${0};
+  line-height: 20px;
+`)),(({theme:e})=>e.color.textLight)),ua=Object(r.f)(Zn).withConfig({displayName:"esm__ItemWrapper2",componentId:"c0ijgk-28"})(Ht||(Ht=R||(R=dt`
+  display: inline-flex;
+  color: inherit;
+  min-width: ${0}px;
+  &:hover {
+    ${0} {
+      color: ${0};
+    }
+    ${0} {
+      color: ${0};
+    }
+  }
+`)),145,na,(({theme:e})=>e.color.textHover),ma,(({theme:e})=>e.color.text)),ba=({productLinks:e,boldLabels:t=!0,messages:i,linkRefs:n})=>{const s=Object(o.a)().formatMessage,l=t?na:aa;return a.a.createElement(pa,null,e.map((({url:e,intlLabelKey:t,intlDescriptionKey:o,iconUrl:r,intlLinkTitleKey:c,intlIconAltTextKey:d},p)=>a.a.createElement(ua,{to:e,ref:e=>n&&(n[p]=e),key:t,title:s(c?i[c]:i[t])},a.a.createElement(ha,null,a.a.createElement(ya,{src:r,height:"40",width:"40",alt:d?s(i[d]):""})),a.a.createElement(fa,null,a.a.createElement(l,null,s(i[t])),a.a.createElement(ma,null,s(i[o])))))))},ga=Object(n.memo)(ba),fa=r.f.div.withConfig({displayName:"esm__TextWrapper1",componentId:"c0ijgk-29"})(Pt||(Pt=q||(q=dt`
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: ${0}px;
+`)),316),ha=r.f.div.withConfig({displayName:"esm__IconWrapper1",componentId:"c0ijgk-30"})(Wt||(Wt=G||(G=dt`
+  margin-right: 12px;
+  display: inline-flex;
+  align-items: center;
+`))),ya=r.f.img.withConfig({displayName:"esm__Icon",componentId:"c0ijgk-31"})(zt||(zt=Y||(Y=dt`
+  filter: ${0};
+`)),"drop-shadow(0px 2px 2px rgba(91, 97, 110, 0.14)) drop-shadow(0px 3px 1px rgba(91, 97, 110, 0.12)) drop-shadow(0px 1px 5px rgba(91, 97, 110, 0.2))"),xa=r.f.div.withConfig({displayName:"esm__AccessibilityWrapper",componentId:"c0ijgk-32"})(Rt||(Rt=J||(J=dt`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`))),wa=Object(n.memo)(xa),ka=[{intlLabelKey:"institutional",intlDescriptionKey:"institutionalDescription",intlLinkTitleKey:"institutionalLinkTitle",intlIconAltTextKey:"institutionalIconAltText",url:"https://www.coinbase.com/institutional",iconUrl:"https://images.ctfassets.net/c5bd0wqjc7v0/6rjjBsuUFcTNro1OviDdDC/fafc347876b5fede9d19d3dabc26fa0a/new-institutional-icon.svg"},{intlLabelKey:"prime",intlDescriptionKey:"primeDescription",intlLinkTitleKey:"primeLinkTitle",intlIconAltTextKey:"primeIconAltText",url:"https://www.coinbase.com/prime",iconUrl:"https://images.ctfassets.net/c5bd0wqjc7v0/59sLic8xsGkkCUuHfqn4wc/7e46b201f78bcd4664333d19733fb5f8/new-prime-icon.svg"},{intlLabelKey:"commerce",intlDescriptionKey:"commerceDescription",intlLinkTitleKey:"commerceLinkTitle",intlIconAltTextKey:"commerceIconAltText",url:"https://commerce.coinbase.com/",iconUrl:"https://images.ctfassets.net/c5bd0wqjc7v0/1FEdoR9yiNRC5hCCWsa5L2/61c31cd86e8a9e36f4282454b6e19cb9/new-commerce-icon.svg"},{intlLabelKey:"assetHub",intlDescriptionKey:"assetHubDescription",intlLinkTitleKey:"assetHubLinkTitle",intlIconAltTextKey:"assetHubIconAltText",url:"https://www.coinbase.com/assethub",iconUrl:"https://images.ctfassets.net/c5bd0wqjc7v0/4sGoc9vBSbsR5hFqSixQsh/f0ef61797bb1d30ba32394b2816669be/new-assetHub-icon.svg"},{intlLabelKey:"exchange",intlDescriptionKey:"exchangeDescription",intlLinkTitleKey:"exchangeLinkTitle",intlIconAltTextKey:"exchangeIconAltText",url:"https://www.coinbase.com/exchange",iconUrl:"https://images.ctfassets.net/c5bd0wqjc7v0/VZpxxgYHNWXtyzq0tE2vt/a1f11b07a5bbfc256bcdd7a4506da4b4/new-exchange-icon.svg"},{intlLabelKey:"compliance",intlDescriptionKey:"complianceDescription",intlLinkTitleKey:"complianceLinkTitle",intlIconAltTextKey:"complianceIconAltText",url:"https://www.coinbase.com/compliance",iconUrl:"https://images.ctfassets.net/c5bd0wqjc7v0/6Rd7hwbfRn1WaJyaZ0l5d8/6e03d79fafcac04897c65ad5486b61c8/new-analytics-icon.svg"}],va=Object(s.a)({businessesTitle:{id:"BusinessesTab.businessesTitle",defaultMessage:"Built for businesses and institutions"},businessesDescription:{id:"BusinessesTab.businessesDescription",defaultMessage:"Crypto solutions for institutional investors, family offices, and businesses"},businessesLinkText:{id:"BusinessesTab.businessesLinkText",defaultMessage:"See all products"},prime:{id:"BusinessesTab.prime",defaultMessage:"Prime"},primeDescription:{id:"BusinessesTab.primeDescription",defaultMessage:"The prime brokerage platform"},commerce:{id:"BusinessesTab.commerce",defaultMessage:"Commerce"},commerceDescription:{id:"BusinessesTab.commerceDescription",defaultMessage:"Accept crypto from anyone"},assetHub:{id:"BusinessesTab.assetHub",defaultMessage:"Asset Hub"},assetHubDescription:{id:"BusinessesTab.assetHubDescription",defaultMessage:"List your asset on Coinbase"},exchange:{id:"BusinessesTab.exchange",defaultMessage:"Exchange"},exchangeDescription:{id:"BusinessesTab.exchangeDescription",defaultMessage:"Direct access to our exchange"},institutional:{id:"BusinessesTab.institutional",defaultMessage:"Institutional"},institutionalDescription:{id:"BusinessesTab.institutionalDescription",defaultMessage:"Solutions for institutional investors"},compliance:{id:"BusinessesTab.compliance",defaultMessage:"Compliance"},complianceDescription:{id:"BusinessesTab.complianceDescription",defaultMessage:"Power your crypto compliance"},commerceLinkTitle:{id:"BusinessesTab.commerceLinkTitle",defaultMessage:"Coinbase Commerce - Start accepting cryptocurrency payments"},primeLinkTitle:{id:"BusinessesTab.primeLinkTitle",defaultMessage:"Cryptocurrency trading for institutions"},assetHubLinkTitle:{id:"BusinessesTab.assetHubLinkTitle",defaultMessage:"List your asset on Coinbase"},exchangeLinkTitle:{id:"BusinessesTab.exchangeLinkTitle",defaultMessage:"Direct access to our exchange"},institutionalLinkTitle:{id:"BusinessesTab.institutionalLinkTitle",defaultMessage:"Solutions for institutional investors"},complianceLinkTitle:{id:"BusinessesTab.complianceLinkTitle",defaultMessage:"Coinbase Compliance - Power your crypto compliance"},commerceIconAltText:{id:"BusinessesTab.commerceIconAltText",defaultMessage:"Coinbase Commerce Icon"},custodyIconAltText:{id:"BusinessesTab.custodyIconAltText",defaultMessage:"Coinbase Custody Icon"},primeIconAltText:{id:"BusinessesTab.primeIconAltText",defaultMessage:"Coinbase Prime Icon"},assetHubIconAltText:{id:"BusinessesTab.assetHubIconAltText",defaultMessage:"Asset Hub Icon"},exchangeIconAltText:{id:"BusinessesTab.exchangeIconAltText",defaultMessage:"Exchange Icon"},institutionalIconAltText:{id:"BusinessesTab.institutionalIconAltText",defaultMessage:"institutional Icon"},complianceIconAltText:{id:"BusinessesTab.complianceIconAltText",defaultMessage:"Compliance Icon"}}),Ta=({linkRefs:e})=>{const t=Object(o.a)().formatMessage;return a.a.createElement(wa,{id:"global-nav-dropdown-business"},a.a.createElement(ga,{productLinks:ka,messages:va,linkRefs:e}),a.a.createElement(sa,{title:t(va.businessesTitle),description:t(va.businessesDescription),linkText:t(va.businessesLinkText),url:"https://www.coinbase.com/products"}))},Ia=Object(n.memo)(Ta);const La=({links:e,messages:t,columns:i=2,linkRefs:s})=>{const l=Object(o.a)().formatMessage,r=rn(Object(n.useState)(""),2),c=r[0],d=r[1];return a.a.createElement(pa,{columns:i},e.map((({url:e,intlLabelKey:i,intlDescriptionKey:n,intlLinkTitleKey:o},r)=>{const p=c===i;return a.a.createElement(Da,{logEvents:!0,ref:e=>s&&(s[r]=e),to:e,key:i,title:l(o?t[o]:t[i])},a.a.createElement(Ea,{onMouseEnter:()=>d(i),onMouseLeave:()=>d("")},a.a.createElement(Ma,{isHovered:p}),a.a.createElement(ja,null,a.a.createElement(na,{key:i,as:n&&t[n]?"h4":"span"},l(t[i])),n&&t[n]?a.a.createElement(ma,null,l(t[n])):null)))})))},Ca=Object(n.memo)(La),ja=r.f.div.withConfig({displayName:"esm__TextWrapper",componentId:"c0ijgk-33"})(qt||(qt=V||(V=dt`
+  display: inline-flex;
+  flex-direction: column;
+  max-width: ${0}px;
+  @media screen and (max-width: 1140px) {
+    max-width: ${0}px;
+  }
+`)),316,285),Da=Object(r.f)(ua).withConfig({displayName:"esm__CaretItemWrapper",componentId:"c0ijgk-34"})(Gt||(Gt=Q||(Q=dt`
+  &:hover {
+    ${0} {
+      color: ${0};
+    }
+  }
+`)),na,(({theme:e})=>e.color.textAccentHover)),Ea=r.f.span.withConfig({displayName:"esm__InnerItemWrapper",componentId:"c0ijgk-35"})(Yt||(Yt=Z||(Z=dt`
+  display: inline-flex;
+`))),Ma=Object(r.f)((function({className:e,color:t="#000"}){return a.a.createElement("svg",{className:e,width:"8",height:"11",fill:"none",xmlns:"http://www.w3.org/2000/svg"},a.a.createElement("path",{d:"M7.172 5.773L2.257.823.5 2.593l3.157 3.18L.5 8.953l1.757 1.77 4.915-4.95z",fill:t}))})).attrs((({theme:e,isHovered:t})=>({color:t?e.color.textAccentHover:e.color.text}))).withConfig({displayName:"esm__StyledChevron",componentId:"c0ijgk-36"})(Jt||(Jt=X||(X=dt`
+  margin-right: 18px;
+  margin-top: 2px;
+`))),$a=[{intlLabelKey:"companyAbout",intlLinkTitleKey:"aboutLinkTitle",url:"https://www.coinbase.com/about"},{intlLabelKey:"careers",intlLinkTitleKey:"careersLinkTitle",url:"https://www.coinbase.com/careers"},{intlLabelKey:"affiliates",intlLinkTitleKey:"affiliatesLinkTitle",url:"https://www.coinbase.com/affiliates"},{intlLabelKey:"support",intlLinkTitleKey:"supportLinkTitle",url:"https://help.coinbase.com"},{intlLabelKey:"blog",url:"https://blog.coinbase.com"},{intlLabelKey:"security",url:"https://www.coinbase.com/security"}],Aa=Object(s.a)({companyTitle:{id:"CompanyTab.companyTitle",defaultMessage:"Learn all about Coinbase"},companyDescription:{id:"CompanyTab.companyDescription",defaultMessage:"We're building an open financial system for the world."},companyAbout:{id:"CompanyTab.companyAbout",defaultMessage:"About"},aboutLinkTitle:{id:"CompanyTab.aboutLinkTitle",defaultMessage:"Learn more about the company"},careers:{id:"CompanyTab.careers",defaultMessage:"Careers"},careersLinkTitle:{id:"CompanyTab.careersLinkTitle",defaultMessage:"Work at Coinbase"},affiliates:{id:"CompanyTab.affiliates",defaultMessage:"Affiliates"},affiliatesLinkTitle:{id:"CompanyTab.affiliatesLinkTitle",defaultMessage:"Earn money becoming an affiliate"},support:{id:"CompanyTab.support",defaultMessage:"Support"},supportLinkTitle:{id:"CompanyTab.supportLinkTitle",defaultMessage:"Our help center"},blog:{id:"CompanyTab.blog",defaultMessage:"Blog"},security:{id:"CompanyTab.security",defaultMessage:"Security"}}),Oa=({linkRefs:e})=>{const t=Object(o.a)().formatMessage,i=Object(n.useContext)(zn).isJapan,s=$a.filter((e=>{if(!i||"affiliates"!==e.intlLabelKey)return e}));return a.a.createElement(wa,{id:"global-nav-dropdown-company"},a.a.createElement(Ca,{links:s,messages:Aa,linkRefs:e}),a.a.createElement(sa,{title:t(Aa.companyTitle),description:t(Aa.companyDescription)}))},_a=Object(n.memo)(Oa),Na=[{intlLabelKey:"cloud",intlLinkTitleKey:"cloudLinkTitle",url:"https://www.coinbase.com/cloud",intlDescriptionKey:"cloudDescription",intlIconAltTextKey:"cloudIconAltText",iconUrl:"https://images.ctfassets.net/c5bd0wqjc7v0/6xvB0yE6s3SBLlUw0TVQgV/b5d1936d738e25e43a484a0615bb4c0c/cloud-icon.svg"},{intlLabelKey:"coinbasePaySdk",intlLinkTitleKey:"coinbasePaySdkLinkTitle",url:"https://www.coinbase.com/cloud/products/pay-sdk",intlDescriptionKey:"coinbasePaySdkDescription",intlIconAltTextKey:"coinbasePaySdkIconAltText",iconUrl:"https://images.ctfassets.net/c5bd0wqjc7v0/1gvNK5eS7b2XF2URxTotha/5406957e6d27cc51ccdd28c2e8954645/PaySDK.svg"},{intlLabelKey:"node",intlLinkTitleKey:"nodeLinkTitle",url:"https://www.coinbase.com/cloud/products/node",intlDescriptionKey:"nodeDescription",intlIconAltTextKey:"nodeIconAltText",iconUrl:"https://images.ctfassets.net/c5bd0wqjc7v0/2NyyIW3XHFDqHUrnD90cJ8/823945eddf55709be2dac8b891945dc0/querytransacticon.png"},{intlLabelKey:"commerce",intlLinkTitleKey:"commerceLinkTitle",url:"https://www.coinbase.com/cloud/products/commerce-api",intlDescriptionKey:"commerceDescription",intlIconAltTextKey:"commerceIconAltText",iconUrl:"https://images.ctfassets.net/c5bd0wqjc7v0/1gONxIto9cBDgURkFnHDwI/3b6162d9707fbbe38fe7cc523dce1ef2/CommerceSDK.svg"},{intlLabelKey:"walletLink",intlLinkTitleKey:"walletLinkLinkTitle",url:"https://www.coinbase.com/cloud/products/wallet-sdk",intlDescriptionKey:"walletLinkDescription",intlIconAltTextKey:"walletIconAltText",iconUrl:"https://images.ctfassets.net/c5bd0wqjc7v0/6bosrgZH2jBWBZQah4JXga/2e8f64c268809143dc4302e1c3e4d932/WalletSDK.svg"},{intlLabelKey:"pro",intlLinkTitleKey:"proLinkTitle",url:"https://www.coinbase.com/cloud/products/exchange-api",intlDescriptionKey:"proDescription",intlIconAltTextKey:"proIconAltText",iconUrl:"https://images.ctfassets.net/c5bd0wqjc7v0/7rGPsp9krWAgnuAe7072CY/862f6681d282f2a8415c2a9818fc666c/ExchangeAPI.svg"},{intlLabelKey:"delegate",intlLinkTitleKey:"delegateLinkTitle",url:"https://www.coinbase.com/cloud/products/staking",intlDescriptionKey:"delegateDescription",intlIconAltTextKey:"delegateIconAltText",iconUrl:"https://images.ctfassets.net/c5bd0wqjc7v0/gJjdcPXrDOa4BoiVQqPEO/b69c9c50d171dfa7464a3b1e09767662/Delegate.svg"}],Ka=Object(s.a)({developersTitle:{id:"DevelopersTab.developersTitle",defaultMessage:"Build with Coinbase Cloud"},developersDescription:{id:"DevelopersTab.developersDescription",defaultMessage:"Tools and APIs for developers building with crypto"},developersLinkText:{id:"DevelopersTab.developersLinkText",defaultMessage:"See all products"},rosetta:{id:"DevelopersTab.rosetta",defaultMessage:"Rosetta"},rosettaDescription:{id:"DevelopersTab.rosettaDescription",defaultMessage:"Integrate your blockchain everywhere"},walletLink:{id:"DevelopersTab.walletLink",defaultMessage:"Wallet SDK"},walletLinkDescription:{id:"DevelopersTab.walletLinkDescription",defaultMessage:"Link dapps to Coinbase Wallet"},bisonTrails:{id:"DevelopersTab.bisonTrails",defaultMessage:"Bison Trails"},bisonTrailsDescription:{id:"DevelopersTab.bisonTrailsDescription",defaultMessage:"Pioneering blockchain infrastructure"},developerHub:{id:"DevelopersTab.developerHub",defaultMessage:"Developer Hub"},developerHubDescription:{id:"DevelopersTab.developerHubDescription",defaultMessage:"Explore our developer documentation"},connect:{id:"DevelopersTab.connect",defaultMessage:"Sign in with Coinbase"},connectDescription:{id:"DevelopersTab.connectDescription",defaultMessage:"Offer Coinbase users login to dapps"},connectLinkTitle:{id:"DevelopersTab.connectLinkTitle",defaultMessage:"Connect - Enable users to buy, sell and store crypto"},connectIconAltText:{id:"DevelopersTab.connectIconAltText",defaultMessage:"Connect - Enable users to buy, sell and store crypto"},commerce:{id:"DevelopersTab.commerce",defaultMessage:"Commerce API"},commerceDescription:{id:"DevelopersTab.commerceDescription",defaultMessage:"Accept crypto payments from customers"},commerceLinkTitle:{id:"DevelopersTab.commerceLinkTitle",defaultMessage:"Commerce - Enable users to buy, sell and store crypto"},pro:{id:"DevelopersTab.pro",defaultMessage:"Exchange API"},proDescription:{id:"DevelopersTab.proDescription",defaultMessage:"Power automated trading"},proLinkTitle:{id:"DevelopersTab.proLinkTitle",defaultMessage:"Exchange & Pro - Programmatically manage crypto"},proIconAltText:{id:"DevelopersTab.proIconAltText",defaultMessage:"Exchange & Pro - Programmatically manage crypto"},coinbasePaySdk:{id:"DevelopersTab.coinbasePaySdk",defaultMessage:"Pay SDK"},coinbasePaySdkDescription:{id:"DevelopersTab.coinbasePaySdkDescription",defaultMessage:"A secure fiat-to-crypto solution"},coinbasePaySdkLinkTitle:{id:"DevelopersTab.coinbasePaySdkLinkTitle",defaultMessage:"Easy, secure fiat-to-crypto solution"},coinbasePaySdkIconAltText:{id:"DevelopersTab.coinbasePaySdkIconAltText",defaultMessage:"Easy, secure fiat-to-crypto solution"},node:{id:"DevelopersTab.node",defaultMessage:"Node"},nodeLinkTitle:{id:"DevelopersTab.nodeLinkTitle",defaultMessage:"Read and write blockchain data"},nodeDescription:{id:"DevelopersTab.nodeDescription",defaultMessage:"Read and write blockchain data"},nodeIconAltText:{id:"DevelopersTab.nodeIconAltText",defaultMessage:"Read and write blockchain data"},developerHubLinkTitle:{id:"DevelopersTab.developerHubLinkTitle",defaultMessage:"Developer Hub - Explore our developer documentation"},rosettaLinkTitle:{id:"DevelopersTab.rosettaLinkTitle",defaultMessage:"Rosetta - Integrate your blockchain everywhere"},walletLinkLinkTitle:{id:"DevelopersTab.walletLinkLinkTitle",defaultMessage:"Link dapps to Coinbase Wallet"},bisonTrailsLinkTitle:{id:"DevelopersTab.bisonTrailsLinkTitle",defaultMessage:"Bison Trails - Run infrastructure on multiple blockchains"},cloud:{id:"DevelopersTab.cloud",defaultMessage:"Cloud"},cloudLinkTitle:{id:"DevelopersTab.cloudLinkTitle",defaultMessage:"Cloud"},cloudDescription:{id:"DevelopersTab.cloudDescription",defaultMessage:"Developer tools and APIs"},cloudIconAltText:{id:"DevelopersTab.cloudIconAltText",defaultMessage:"cloud icon"},walletIconAltText:{id:"DevelopersTab.walletIconAltText",defaultMessage:"wallet icon"},commerceIconAltText:{id:"DevelopersTab.commerceIconAltText",defaultMessage:"commerce icon"},delegate:{id:"DevelopersTab.delegate",defaultMessage:"Delegate"},delegateIconAltText:{id:"DevelopersTab.delegateIconAltText",defaultMessage:"delegate icon - Stake tokens to earn rewards"},delegateLinkTitle:{id:"DevelopersTab.delegateTitle",defaultMessage:"Delegate"},delegateDescription:{id:"DevelopersTab.delegateDescription",defaultMessage:"Stake tokens to earn rewards"}}),Sa=({linkRefs:e})=>{const t=Object(o.a)().formatMessage;return a.a.createElement(wa,{id:"global-nav-dropdown-developers"},a.a.createElement(ga,{productLinks:Na,messages:Ka,linkRefs:e}),a.a.createElement(sa,{title:t(Ka.developersTitle),description:t(Ka.developersDescription),linkText:t(Ka.developersLinkText),url:"https://www.coinbase.com/products"}))},Ba=Object(n.memo)(Sa),Ua=[{intlLabelKey:"trade",intlDescriptionKey:"tradeDescription",intlLinkTitleKey:"tradeLinkTitle",intlIconAltTextKey:"tradeIconAltText",url:"https://www.coinbase.com/signup",iconUrl:"https://images.ctfassets.net/q5ulk4bp65r7/1rFQCqoq8hipvVJSKdU3fQ/21ab733af7a8ab404e29b873ffb28348/coinbase-icon2.svg"},{intlLabelKey:"wallet",intlDescriptionKey:"walletDescription",intlLinkTitleKey:"walletLinkTitle",intlIconAltTextKey:"walletIconAltText",url:"https://www.coinbase.com/wallet",iconUrl:"https://images.ctfassets.net/c5bd0wqjc7v0/3D4rzGMOJJ5oUpV3G0mc5C/372169f5a6b06f7e8cd6c29f5ada23c7/new-wallet-icon.svg"},{intlLabelKey:"earn",intlDescriptionKey:"newEarnDescription",intlLinkTitleKey:"earnLinkTitle",intlIconAltTextKey:"earnIconAltText",url:"https://www.coinbase.com/earn",iconUrl:"https://images.ctfassets.net/c5bd0wqjc7v0/6p26wqrFCoNdZDIGyGzFKH/2387448b61bc821fc229800824bc93df/Earn-asset-logged-out.svg"},{intlLabelKey:"card",intlDescriptionKey:"cardDescription",intlLinkTitleKey:"cardLinkTitle",intlIconAltTextKey:"cardIconAltText",url:"https://www.coinbase.com/card",iconUrl:"https://images.ctfassets.net/c5bd0wqjc7v0/2OUJoRinjmzcv3L4oEvD8C/68d9a0ea281708d0b859c6fd7d909a1a/new-card-icon.svg"},{intlLabelKey:"privateClient",intlDescriptionKey:"privateClientDescription",intlLinkTitleKey:"privateClientLinkTitle",intlIconAltTextKey:"privateClientIconAltText",url:"https://www.coinbase.com/private-client",iconUrl:"https://images.ctfassets.net/c5bd0wqjc7v0/1CmcG8xD5BPT3DYJnl0DXG/6135743862720cdd53a5a9077c64e0af/new-private-client-icon.svg"},{intlLabelKey:"borrow",intlDescriptionKey:"borrowDescription",intlLinkTitleKey:"borrowLinkTitle",intlIconAltTextKey:"borrowIconAltText",url:"https://www.coinbase.com/borrow",iconUrl:"https://images.ctfassets.net/c5bd0wqjc7v0/26W7tWrpDU6eLcgKiuL7U7/887617ce48666f87365d1f4fe0675cc3/new-borrow-icon.svg"},{intlLabelKey:"rewardsHub",intlDescriptionKey:"rewardsHubDescription",intlLinkTitleKey:"rewardsHubLinkTitle",intlIconAltTextKey:"rewardsHubIconAltText",url:"https://www.coinbase.com/rewards",iconUrl:"https://images.ctfassets.net/c5bd0wqjc7v0/4aimnFIF9r1DhebxFhYaEm/fe83638dae90ae49bf41e4a00f2372c6/new-rewards-icon.svg"},{intlLabelKey:"learningRewards",intlDescriptionKey:"earnDescription",intlLinkTitleKey:"learningRewardsLinkTitle",intlIconAltTextKey:"learningRewardsIconAltText",url:"https://www.coinbase.com/learning-rewards",iconUrl:"https://images.ctfassets.net/c5bd0wqjc7v0/2R68T7CC9SMNPZ0qlBT27C/2b101f95e5b201bf99216dafe14c5d1a/new-earn-icon.svg"},{intlLabelKey:"nft",intlDescriptionKey:"nftDescription",intlLinkTitleKey:"nftLinkTitle",intlIconAltTextKey:"nftIconAltText",url:"https://nft.coinbase.com",iconUrl:"https://images.ctfassets.net/c5bd0wqjc7v0/MnTi2c0sf1SMl2j4rQgew/e9bd7ce56171576923eac474a862fcd0/NFT.svg"},{intlLabelKey:"derivatives",intlDescriptionKey:"derivativesDescription",intlLinkTitleKey:"derivativesLinkTitle",intlIconAltTextKey:"derivativesIconAltText",url:"https://www.coinbase.com/derivatives",iconUrl:"https://images.ctfassets.net/c5bd0wqjc7v0/FkpxYKh8E3bCvOkM2buz3/7914de9d8ce7657ad72af6fb1af8fe92/derivativesNavigation__1_.svg"}],Fa=Object(s.a)({individualsTitle:{id:"IndividualsTab.individualsTitle",defaultMessage:"Crypto tools for everyone"},individualsDescription:{id:"IndividualsTab.individualsDescription",defaultMessage:"Buy, sell, and spend crypto on the world's most trusted crypto exchange"},individualsIndiaDescription:{id:"IndividualsTab.individualsIndiaDescription",defaultMessage:"Buy, sell, and trade crypto on the world's most trusted crypto exchange"},individualsLinkText:{id:"IndividualsTab.individualsLinkText",defaultMessage:"See all products"},trade:{id:"IndividualsTab.trade",defaultMessage:"Buy and sell"},tradeDescription:{id:"IndividualsTab.tradeDescription",defaultMessage:"Buy, sell and use crypto"},wallet:{id:"IndividualsTab.wallet",defaultMessage:"Wallet"},walletDescription:{id:"IndividualsTab.walletDescription",defaultMessage:"The best self-hosted crypto wallet"},learningRewards:{id:"IndividualsTab.learningRewards",defaultMessage:"Learning rewards"},earn:{id:"IndividualsTab.earn",defaultMessage:"Earn"},earnDescription:{id:"IndividualsTab.earnDescription",defaultMessage:"Learn and earn crypto"},newEarnDescription:{id:"IndividualsTab.newEarnDescription",defaultMessage:"Earn interest on your crypto"},card:{id:"IndividualsTab.card",defaultMessage:"Card"},cardDescription:{id:"IndividualsTab.cardDescription",defaultMessage:"Spend crypto, earn crypto rewards"},privateClient:{id:"IndividualsTab.privateClient",defaultMessage:"Private Client"},privateClientDescription:{id:"IndividualsTab.privateClientDescription",defaultMessage:"For trusts, family offices, UHNWIs"},borrow:{id:"IndividualsTab.borrow",defaultMessage:"Borrow"},borrowDescription:{id:"IndividualsTab.borrowDescription",defaultMessage:"Borrow cash using Bitcoin as collateral"},rewardsHub:{id:"IndividualsTab.rewardsHub",defaultMessage:"Rewards"},rewardsHubDescription:{id:"IndividualsTab.rewardsHubDescription",defaultMessage:"Earn crypto, win crypto"},nft:{id:"IndividualsTab.nft",defaultMessage:"NFT"},nftDescription:{id:"IndividualsTab.nftDescription",defaultMessage:"Create, collect, connect"},derivatives:{id:"IndividualsTab.derivatives",defaultMessage:"Derivatives"},derivativesDescription:{id:"IndividualsTab.derivativesDescription",defaultMessage:"Trade an accessible futures market"},learningRewardsLinkTitle:{id:"IndividualsTab.learningRewardsLinkTitle",defaultMessage:"Coinbase learning rewards - Learn about crypto and get rewards"},earnLinkTitle:{id:"IndividualsTab.earnLinkTitle",defaultMessage:"Coinbase Earn - Earn interest on your crypto"},tradeLinkTitle:{id:"IndividualsTab.tradeLinkTitle",defaultMessage:"Signup for Coinbase"},cardLinkTitle:{id:"IndividualsTab.cardLinkTitle",defaultMessage:"Coinbase Card - Spend crypto anywhere"},walletLinkTitle:{id:"IndividualsTab.walletLinkTitle",defaultMessage:"Coinbase Wallet - Store your cryptocurrency"},privateClientLinkTitle:{id:"IndividualsTab.privateClientLinkTitle",defaultMessage:"Coinbase Private Client - For trusts, family offices, and UHNWIs"},borrowLinkTitle:{id:"IndividualsTab.borrowLinkTitle",defaultMessage:"Coinbase Borrow - Borrow cash using Bitcoin as collateral"},rewardsHubLinkTitle:{id:"IndividualsTab.rewardsHubLinkTitle",defaultMessage:"Coinbase Rewards - Earn crypto, win crypto"},nftLinkTitle:{id:"IndividualsTab.nftLinkTitle",defaultMessage:"Create, collect, connect"},derivativesLinkTitle:{id:"IndividualsTab.derivativesLinkTitle",defaultMessage:"Trade an accessible futures market"},learningRewardsIconAltText:{id:"IndividualsTab.learningRewardsIconAltText",defaultMessage:"Coinbase learning rewards Icon"},earnIconAltText:{id:"IndividualsTab.earnIconAltText",defaultMessage:"Coinbase Earn Icon"},tradeIconAltText:{id:"IndividualsTab.tradeIconAltText",defaultMessage:"Coinbase Icon"},cardIconAltText:{id:"IndividualsTab.cardIconAltText",defaultMessage:"Coinbase Card Icon"},walletIconAltText:{id:"IndividualsTab.walletIconAltText",defaultMessage:"Coinbase Wallet Icon"},privateClientIconAltText:{id:"IndividualsTab.privateClientAltText",defaultMessage:"Coinbase Private Client Icon"},borrowIconAltText:{id:"IndividualsTab.borrowAltText",defaultMessage:"Coinbase Borrow Icon"},rewardsHubIconAltText:{id:"IndividualsTab.rewardsHubIconAltText",defaultMessage:"Coinbase Rewards Icon"},nftIconAltText:{id:"IndividualsTab.nftIconAltText",defaultMessage:"Coinbase NFT Icon"},derivativesIconAltText:{id:"IndividualsTab.derivativesIconAltText",defaultMessage:"Coinbase Derivatives Icon"}}),Ha=({linkRefs:e,isInRewardsHubExperiment:t})=>{const i=Object(o.a)().formatMessage,s=Object(n.useContext)(zn).isIndia,l=s?Fa.individualsIndiaDescription:Fa.individualsDescription;let r=Ua;return t||(r=Ua.filter((e=>"rewardsHub"!==e.intlLabelKey))),s&&(r=Ua.filter((e=>{if("trade"===e.intlLabelKey||"wallet"===e.intlLabelKey)return e}))),a.a.createElement(wa,{id:"global-nav-dropdown-individuals"},a.a.createElement(ga,{linkRefs:e,productLinks:r,messages:Fa}),a.a.createElement(sa,{title:i(Fa.individualsTitle),description:i(l),linkText:i(Fa.individualsLinkText),url:"https://www.coinbase.com/products"}))},Pa=Object(n.memo)(Ha),Wa="https://www.coinbase.com/bytes",za=[{url:"https://www.coinbase.com/learn/tips-and-tutorials",intlLabelKey:"tips"},{url:"https://www.coinbase.com/learn/crypto-basics",intlLabelKey:"cryptoBasics"},{url:"https://www.coinbase.com/learn/market-updates",intlLabelKey:"marketUpdates"},{url:Wa,intlLabelKey:"newsletter"}],Ra=Object(s.a)({learnTitle:{id:"LearnTab.learnTitle",defaultMessage:"Crypto questions, answered"},learnDescription:{id:"LearnTab.learnDescription",defaultMessage:"Guides and explainers for your crypto questions"},learnLinkText:{id:"LearnTab.learnLinkText",defaultMessage:"See all articles"},tips:{id:"LearnTab.tips",defaultMessage:"Tips & Tutorials"},cryptoBasics:{id:"LearnTab.cryptoBasics",defaultMessage:"Crypto basics"},marketUpdates:{id:"LearnTab.marketUpdates",defaultMessage:"Market updates"},newsletter:{id:"LearnTab.newsletter",defaultMessage:"Newsletter"},learnSeeAllArticles:{id:"LearnTab.learnSeeAllArticles",defaultMessage:"See all articles"}}),qa=({linkRefs:e})=>{const t=Object(o.a)().formatMessage,i=Object(n.useContext)(zn).showCoinbaseBytes,s=za.filter((e=>e.url!==Wa||i));return a.a.createElement(wa,{id:"global-nav-dropdown-learn"},a.a.createElement(Ca,{linkRefs:e,links:s,messages:Ra,columns:1}),a.a.createElement(sa,{title:t(Ra.learnTitle),description:t(Ra.learnDescription),linkText:t(Ra.learnLinkText),url:"https://www.coinbase.com/learn"}))},Ga=Object(n.memo)(qa),Ya=Object(s.a)({pricesTitle:{id:"PricesTab.pricesTitle",defaultMessage:"The latest market trends"},pricesDescription:{id:"PricesTab.pricesDescription",defaultMessage:"Stay up to date on the latest market movers, shakers, and biggest losers"},pricesLinkText:{id:"PricesTab.pricesLinkText",defaultMessage:"See all"},bitcoin:{id:"PricesTab.bitcoin",defaultMessage:"Bitcoin"},bitcoinDescription:{id:"PricesTab.bitcoinDescription",defaultMessage:"BTC"},litecoin:{id:"PricesTab.litecoin",defaultMessage:"Litecoin"},litecoinDescription:{id:"PricesTab.LitecoinDescription",defaultMessage:"LTC"},ethereum:{id:"PricesTab.ethereum",defaultMessage:"Ethereum"},ethereumDescription:{id:"PricesTab.ethereumDescription",defaultMessage:"ETH"},bitcoinCash:{id:"PricesTab.bitcoinCash",defaultMessage:"Bitcoin Cash"},bitcoinCashDescription:{id:"PricesTab.bitcoinCashDescription",defaultMessage:"BCH"},chainLink:{id:"PricesTab.chainLink",defaultMessage:"Chain Link"},chainLinkDescription:{id:"PricesTab.chainLinkDescription",defaultMessage:"LINK"},stellar:{id:"PricesTab.stellar",defaultMessage:"Stellar Lumens"},stellarDescription:{id:"PricesTab.stellarDescription",defaultMessage:"XLM"}}),Ja={learn:Ga,individuals:Pa,businesses:Ia,developers:Ba,company:_a},Va={learn:Ra,individuals:Fa,businesses:va,developers:Ka,company:Aa,prices:Ya},Qa={learn:za,individuals:Ua,businesses:ka,developers:Na,company:$a},Za=[{key:"prices",intlLabelKey:"pricesTab",url:"https://www.coinbase.com/explore",dataSyntheticId:"header-price-link"},{key:"learn",intlLabelKey:"learnTab",url:"https://www.coinbase.com/learn",subLinks:[...Qa.learn,{url:"https://www.coinbase.com/learn",intlLabelKey:"learnSeeAllArticles"}]},{key:"individuals",intlLabelKey:"individualsTab",subLinks:Qa.individuals},{key:"businesses",intlLabelKey:"businessesTab",subLinks:Qa.businesses},{key:"developers",intlLabelKey:"developersTab",subLinks:Qa.developers},{key:"company",intlLabelKey:"companyTab",subLinks:Qa.company}],Xa=e=>{if(!e)return;let t="",i="";const n=null===e||void 0===e?void 0:e.activeVariant;if(n)i=n.label,t=(null===n||void 0===n?void 0:n.i18nId)||"createAccountCta.signUp";else{const n=e;i=null===n||void 0===n?void 0:n.label,t=(null===n||void 0===n?void 0:n.i18nId)||"createAccountCta.signUp"}if(!i)return;return{id:t,defaultMessage:i}},eo=({top:e,bottom:t})=>{const i=Object(n.useCallback)((()=>"undefined"!==typeof window&&((void 0===e||e<window.scrollY)&&!(void 0!==t&&!(e=>e<document.body.scrollHeight-window.scrollY-window.innerHeight)(t)))),[e,t]),a=On((()=>i())),o=rn(Object(n.useState)(a),2),s=o[0],l=o[1],r=Object(n.useCallback)((()=>{l(i())}),[l,i]);return Object(n.useEffect)((()=>(window.addEventListener("scroll",r),window.addEventListener("resize",r),()=>{window.removeEventListener("scroll",r),window.addEventListener("resize",r)})),[r]),s},to=r.f.button.withConfig({displayName:"esm__Container",componentId:"c0ijgk-37"})(Vt||(Vt=ee||(ee=dt`
+  position: relative;
+  width: ${0};
+  margin: 0px;
+  border-radius: ${0};
+  font-weight: ${0};
+  color: ${0};
+  cursor: ${0};
+  font-family: ${0};
+  ${0};
+
+  &:focus {
+    outline: none;
+  }
+
+  ${0};
+
+  ${0};
+`)),(e=>e.fullWidth?"100%":"auto"),(({theme:e})=>e.border.borderRadius),(({theme:e})=>e.fontWeight.demiBold),(({theme:e})=>e.color.buttonText),(e=>e.disabled?"default":"pointer"),(({theme:e})=>e.fontFamily.sans),(e=>e.selected&&`z-index: ${e.theme.zIndex.hidden};`),(e=>"normal"===e.size&&"\n    padding: 10px 12px;\n    font-size: 14px;\n    line-height: 14px;\n  "),(e=>"primary"===e.type&&`\n    border: 1px solid ${e.theme.color.buttonFill};\n    background-color: ${e.theme.color.buttonFill};\n\n    &:hover, &:focus {\n      background-color: ${e.theme.color.buttonFillHover};\n      border: 1px solid transparent;\n      transition: background-color ease 0.25s;\n    }\n\n    &:active {\n      border: 1px solid ${e.theme.color.buttonFill};\n      background-color: ${e.theme.color.buttonFill};\n    }\n  `)),io=r.f.div.withConfig({displayName:"esm__Content",componentId:"c0ijgk-38"})(Qt||(Qt=te||(te=dt`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  pointer-events: none;
+`))),no=e=>{let t=e.children,i=(e.loading,e.disabled),n=e.onClick,o=e.value,s=e.size,l=void 0===s?"normal":s,r=e.type,c=void 0===r?"primary":r,d=e.fullWidth,p=void 0!==d&&d,m=e.className,u=ln(e,pt);return a.a.createElement(to,Yn({disabled:i,align:"center",justify:"center",onClick:e=>{n&&n(o?{target:{value:o}}:e)},size:l,type:c,fullWidth:p,className:m},u),a.a.createElement(io,null,t))},ao=({message:e,url:t,onClick:i,superMessage:n,superUrl:o})=>{const s=Bn(Hn),l=!eo({top:100})&&!s;return a.a.createElement(so,{onClick:i,shouldExecuteAnimation:l},t?a.a.createElement(Zn,{to:t},a.a.createElement(lo,{isMobile:s},e),o?a.a.createElement(Zn,{to:o},n&&a.a.createElement(ro,{isMobile:s},n)):a.a.createElement(a.a.Fragment,null,n&&a.a.createElement(ro,{isMobile:s},n)),a.a.createElement(lo,{isMobile:s}," \u2192")):a.a.createElement(lo,{isMobile:s},e))},oo=Object(r.g)(Zt||(Zt=ie||(ie=dt`
+  0% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+`))),so=r.f.div.withConfig({displayName:"esm__Wrapper5",componentId:"c0ijgk-39"})(Xt||(Xt=ne||(ne=dt`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: ${0}px;
+  background-color: ${0};
+  padding-bottom: ${0}px;
+
+  ${0}
+
+  ${0}
+`)),37,(({theme:e})=>e.color.blue),2,(({shouldExecuteAnimation:e})=>e?Object(r.e)(ei||(ei=ae||(ae=dt`
+          transform: translateY(-40px);
+          animation: ${0} ${0}ms 0.133s
+            cubic-bezier(${0});
+          animation-fill-mode: forwards;
+        `)),oo,m.durations.moderate3,m.curves.global.join(",")):""),(({onClick:e})=>!!e&&Object(r.e)(ti||(ti=oe||(oe=dt`
+      cursor: pointer;
+    `))))),lo=r.f.span.withConfig({displayName:"esm__Text",componentId:"c0ijgk-40"})(ii||(ii=se||(se=dt`
+  font-family: ${0};
+  color: ${0};
+  font-size: ${0};
+  line-height: ${0}px;
+  font-weight: ${0};
+
+  ${0}
+`)),(({theme:e})=>e.fontFamily.sans),(({theme:e})=>e.color.white),(({theme:e})=>e.fontSize.medium),19,(({theme:e})=>e.fontWeight.demiBold),(({isMobile:e})=>e?Object(r.e)(ni||(ni=le||(le=dt`
+          font-size: ${0};
+          line-height: ${0}px;
+          font-weight: ${0};
+        `)),(({theme:e})=>e.fontSize.small),16,(({theme:e})=>e.fontWeight.sans)):"")),ro=r.f.sup.withConfig({displayName:"esm__SuperText",componentId:"c0ijgk-41"})(ai||(ai=re||(re=dt`
+  font-family: ${0};
+  color: ${0};
+  font-size: ${0};
+  line-height: ${0}px;
+  font-weight: ${0};
+
+  ${0}
+`)),(({theme:e})=>e.fontFamily.sans),(({theme:e})=>e.color.white),(({theme:e})=>e.fontSize.tiny),19,(({theme:e})=>e.fontWeight.demiBold),(({isMobile:e})=>e?Object(r.e)(oi||(oi=ce||(ce=dt`
+          font-size: ${0};
+          line-height: ${0}px;
+          font-weight: ${0};
+        `)),(({theme:e})=>e.fontSize.tiny),16,(({theme:e})=>e.fontWeight.sans)):"")),co=Object(n.memo)(ao),po=Object(s.a)({homeLinkTitle:{id:"CoinbaseLogo.homeLinkTitle",defaultMessage:"Home"},imgAltText:{id:"CoinbaseLogo.imgAltText",defaultMessage:"Coinbase Logo"}}),mo=({onMouseEnter:e,customLogoUrl:t})=>{const i=Object(o.a)().formatMessage,s=Object(n.useContext)(r.b),l=Object(n.useContext)(zn).useNewLogo,c=t||(({logoKey:e,useNewLogo:t})=>Pn[`${e}${t?"New":""}`])({logoKey:s.logoKey||"blue",useNewLogo:l});return a.a.createElement(bo,{onMouseEnter:e},a.a.createElement(go,{to:"https://www.coinbase.com",title:i(po.homeLinkTitle),testID:"header-home-link"},a.a.createElement(fo,{src:c,height:20,width:t?"auto":112,alt:i(po.imgAltText)})))},uo=Object(n.memo)(mo),bo=r.f.div.withConfig({displayName:"esm__Wrapper4",componentId:"c0ijgk-42"})(si||(si=de||(de=dt`
+  display: flex;
+  align-items: center;
+  padding-bottom: 3px;
+  flex: 2;
+`))),go=Object(r.f)(Zn).withConfig({displayName:"esm__StyledLink1",componentId:"c0ijgk-43"})(li||(li=pe||(pe=dt`
+  display: inline-flex;
+`))),fo=r.f.img.withConfig({displayName:"esm__Logo",componentId:"c0ijgk-44"})(ri||(ri=me||(me=dt`
+  position: relative;
+  max-height: ${0}px;
+`)),20),ho=Object(s.a)({pricesTab:{id:"GlobalNav.pricesTab",defaultMessage:"Explore"},learnTab:{id:"GlobalNav.learnTab",defaultMessage:"Learn"},individualsTab:{id:"GlobalNav.individualsTab",defaultMessage:"Individuals"},businessesTab:{id:"GlobalNav.businessesTab",defaultMessage:"Businesses"},developersTab:{id:"GlobalNav.developersTab",defaultMessage:"Developers"},companyTab:{id:"GlobalNav.companyTab",defaultMessage:"Company"},signInLink:{id:"GlobalNav.signInLink",defaultMessage:"Sign in"},signUpLink:{id:"GlobalNav.signUpLink",defaultMessage:"Sign up"}}),yo="20px 24px",xo=({links:e,className:t})=>{const i=Bn(Hn),o=Object(n.useContext)(zn),s=o.productName,l=o.productUrl,r=o.onClickProductName,c={};return r&&(c.onClick=r),a.a.createElement(vo,{isMobile:i,className:t,includesProductName:!!s},a.a.createElement(To,null,s?a.a.createElement(Co,null,a.a.createElement(ko,Yn({to:l||"/"},c),s)):a.a.createElement(Co,null),a.a.createElement(Io,{isMobile:i},a.a.createElement(Lo,null,e.map((({url:e,active:t,label:i,onClick:n},o)=>{const s={};return n&&(s.onClick=n),a.a.createElement(jo,Yn({to:e||"",key:e||i||`sub_nav_link_index_${o}`,title:i},s),a.a.createElement(Do,{active:t},i))})))),a.a.createElement(Co,null)))},wo=Object(n.memo)(xo),ko=Object(r.f)(Zn).withConfig({displayName:"esm__ProductNameText",componentId:"c0ijgk-45"})(ci||(ci=ue||(ue=dt`
+  font-family: ${0};
+  top: -1.5px;
+  font-size: 18px;
+  font-weight: 300;
+  white-space: nowrap;
+  position: relative;
+  color: ${0};
+  margin-left: ${0}px;
+`)),(({theme:e})=>e.fontFamily.sans),(({theme:e})=>e.color.text),20),vo=r.f.nav.withConfig({displayName:"esm__Wrapper3",componentId:"c0ijgk-46"})(di||(di=be||(be=dt`
+  background: ${0};
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid ${0};
+  ${0}
+`)),(({theme:e})=>e.color.background),(({theme:e})=>e.color.border),(({isMobile:e,includesProductName:t})=>e?Object(r.e)(pi||(pi=ge||(ge=dt`
+          top: ${0}px;
+          ${0} {
+            flex: unset;
+          }
+          ${0} {
+            justify-content: flex-start;
+          }
+          ${0} {
+            justify-content: flex-start;
+            overflow-x: scroll;
+            -webkit-overflow-scrolling: touch;
+          }
+          ${0} {
+            margin-left: ${0}px;
+          }
+          ${0}:last-child {
+            padding-right: ${0}px;
+          }
+        `)),58,Co,To,Lo,Io,t?12:0,jo,20):"")),To=r.f.div.withConfig({displayName:"esm__ContentWrapper",componentId:"c0ijgk-47"})(mi||(mi=fe||(fe=dt`
+  max-width: ${0}px;
+  margin: 0 auto;
+  flex: 1;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  @media screen and (min-width: ${0}px) {
+    padding: 0 ${0}px;
+    box-sizing: content-box;
+    ${0} {
+      margin-left: 0;
+    }
+  }
+`)),(e=>e.theme.layout.width),(e=>e.theme.layout.width),20,ko),Io=r.f.div.withConfig({displayName:"esm__LinksWrapper",componentId:"c0ijgk-48"})(ui||(ui=he||(he=dt`
+  justify-content: center;
+  align-items: center;
+  ${0}
+`)),(({isMobile:e})=>e?Object(r.e)(bi||(bi=ye||(ye=dt`
+          flex: 1;
+          overflow: hidden;
+          position: relative;
+          justify-content: flex-start;
+          &:before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            z-index: ${0};
+            height: 100%;
+            pointer-events: none;
+            background-image: linear-gradient(
+              to left,
+              ${0}00,
+              ${0}
+            );
+            width: 24px;
+          }
+          &:after {
+            position: absolute;
+            content: '';
+            top: 0;
+            right: 0;
+            z-index: ${0};
+            height: 100%;
+            pointer-events: none;
+            background-image: linear-gradient(
+              to right,
+              ${0}00,
+              ${0}
+            );
+            width: 24px;
+          }
+        `)),(({theme:e})=>e.zIndex.elevated),(({theme:e})=>e.color.background),(({theme:e})=>e.color.background),(({theme:e})=>e.zIndex.elevated),(({theme:e})=>e.color.background),(({theme:e})=>e.color.background)):"")),Lo=r.f.div.withConfig({displayName:"esm__LinksContent",componentId:"c0ijgk-49"})(gi||(gi=xe||(xe=dt`
+  padding: ${0}px ${0}px;
+  display: flex;
+`)),18,20),Co=r.f.div.withConfig({displayName:"esm__Spacer",componentId:"c0ijgk-50"})(fi||(fi=we||(we=dt`
+  flex: 1;
+  display: flex;
+  align-items: center;
+`))),jo=Object(r.f)(Zn).withConfig({displayName:"esm__SubNavLink",componentId:"c0ijgk-51"})(hi||(hi=ke||(ke=dt`
+  top: -1px;
+  position: relative;
+  line-height: 16px;
+  white-space: nowrap;
+  &:not(:first-child) {
+    margin-left: ${0}px;
+  }
+`)),30),Do=Object(r.f)(ia).withConfig({displayName:"esm__LinkText",componentId:"c0ijgk-52"})(yi||(yi=ve||(ve=dt`
+  line-height: 18px;
+  position: relative;
+  color: ${0};
+  &:hover {
+    color: ${0};
+  }
+`)),(({theme:e,active:t})=>t?e.color.textAccent:e.color.text),(({theme:e})=>e.color.textAccentHover)),Eo=({navLink:e,activeTab:t,onMouseEnter:i,onClick:n,children:o,title:s,testID:l,onKeyDown:r},c)=>{let d={};return"Prices"!==s&&(d={"aria-expanded":t===e.key?"true":"false","aria-controls":`global-nav-dropdown-${null===s||void 0===s?void 0:s.toLowerCase()}`}),e.url?a.a.createElement(Oo,{to:e.url,ref:c,title:s,testID:l,onKeyDown:r},a.a.createElement(Ao,Yn({onMouseEnter:i,onClick:n,isActive:t===e.key},d),o)):a.a.createElement($o,Yn({onMouseEnter:i,onKeyDown:r,tabIndex:0,ref:c,onClick:n,isActive:t===e.key,"data-testid":l},d),o)},Mo=Object(n.memo)(Object(n.forwardRef)(Eo)),$o=r.f.div.withConfig({displayName:"esm__ItemWrapper1",componentId:"c0ijgk-53"})(xi||(xi=Te||(Te=dt`
+  margin: 0 18px;
+  display: inline-flex;
+  align-items: center;
+  cursor: default;
+  box-shadow: 0;
+  position: relative;
+  ${0};
+`)),(({isActive:e,theme:t})=>e?Object(r.e)(wi||(wi=Ie||(Ie=dt`
+          &:before {
+            position: absolute;
+            top: calc(100% - 3px);
+            width: 100%;
+            height: 4px;
+            background: ${0};
+            display: inline-block;
+            content: '';
+          }
+        `)),t.color.textAccent):"")),Ao=Object(r.f)($o).withConfig({displayName:"esm__LinkItemWrapper",componentId:"c0ijgk-54"})(ki||(ki=Le||(Le=dt`
+  cursor: pointer;
+`))),Oo=Object(r.f)(Zn).withConfig({displayName:"esm__StyledLink",componentId:"c0ijgk-55"})(vi||(vi=Ce||(Ce=dt`
+  line-height: 15px;
+  display: inline-flex;
+`))),_o=()=>{const e=Object(o.a)().formatMessage,t=Object(n.useContext)(Gn).coinbaseAccountsBaseUrl,i=Object(n.useMemo)((()=>new URL("pick-your-account?origin=coinbase.com",t).toString()),[t]);return a.a.createElement(Zn,{logEvents:!0,to:i,title:e(ho.signUpLink),testID:"header-get-started-button-ubo-experiment"},a.a.createElement(no,null,e(ho.signUpLink)))},No={transition:"all 300ms ease-in-out",opacity:0},Ko={entering:{opacity:1},entered:{opacity:1},exiting:{opacity:0},exited:{opacity:0}},So=({isActive:e,children:t})=>{const i=$n("default");return a.a.createElement(r.c,{theme:i},a.a.createElement(Bo,{isActive:e},a.a.createElement(g.Transition,{in:e,timeout:300},(e=>a.a.createElement(Uo,{style:pn(pn({},No),Ko[e])},t)))))},Bo=r.f.section.withConfig({displayName:"esm__Wrapper2",componentId:"c0ijgk-56"})(Ti||(Ti=je||(je=dt`
+  padding: 40px 45px;
+  background: ${0};
+  transition: all ${0}ms linear, box-shadow 0ms linear;
+  text-align: left;
+  opacity: 0;
+  visibility: hidden; /* visibility used for CLS improvements */
+  pointer-events: none;
+  position: absolute;
+  z-index: ${0};
+  top: calc(100% + 1px);
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid ${0};
+  box-shadow: 0;
+  ${0}
+`)),(({theme:e})=>e.color.background),150,(({theme:e})=>e.zIndex.high),(({theme:e})=>e.color.border),(({isActive:e})=>e?Object(r.e)(Ii||(Ii=De||(De=dt`
+          pointer-events: all;
+          display: block;
+          padding: 45px;
+          opacity: 1;
+          visibility: visible; /* visibility used for CLS improvements */
+          transition: position ${0}ms linear;
+          box-shadow: ${0};
+        `)),150,"0px 3px 10px rgba(0, 0, 0, 0.08)"):"")),Uo=r.f.div.withConfig({displayName:"esm__InnerWrapper1",componentId:"c0ijgk-57"})(Li||(Li=Ee||(Ee=dt`
+  max-width: ${0}px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+`)),1065),Fo=Object(r.g)(Ci||(Ci=Me||(Me=dt`
+  from {
+    transform: translateY(${0}px);
+  }
+  to {
+    transform: translateY(0);
+  }
+`)),-66),Ho=({navLinks:e,activeTab:t,setSelectedTab:i,subNavLinks:s,mainCTA:l,banner:r,maxWidth:c,isInUboExperimentTreatment:d,isInRewardsHubExperiment:m,customLogoUrl:u})=>{const g=Object(o.a)().formatMessage,f=Object(n.useRef)(e.reduce(((e,t)=>(e[t.key]=null,e)),{})),h=Object(n.useRef)(Object.keys(Qa).reduce(((e,t)=>(e[t]=Qa[t].map((()=>null)),e)),{})),y=Object(n.useContext)(zn),x=y.signInUrl,w=y.signUpUrl,k=y.onClickSignIn,v=y.onClickSignUp,T=y.showSignInButton,I=y.showSignUpButton,L=Xa(l),C=eo({top:100}),j=()=>{i(null)},D=Object(n.useCallback)((e=>()=>{Jn("global_nav_link",{action:p.ActionType.click,componentType:p.ComponentType.link,loggingId:Fn,key:x}),e()}),[x]);return a.a.createElement(a.a.Fragment,null,a.a.createElement(Wo,{detached:C}),a.a.createElement(zo,{detached:C,hasSubNav:!!s,hasBanner:!!r},a.a.createElement(Ro,{detached:C,onKeyDown:e=>{e.persist(),"Escape"===e.key&&i((e=>{var t;return e?(null===(t=f.current[e])||void 0===t||t.focus(),null):e}))},onMouseLeave:()=>i(null)},a.a.createElement(Go,null,r&&a.a.createElement(co,{message:r.message,url:r.url,onClick:r.onClick,superMessage:r.superMessage,superUrl:r.superUrl}),a.a.createElement(Yo,{maxWidth:c},a.a.createElement(uo,{onMouseEnter:j,customLogoUrl:u}),a.a.createElement(Jo,null,e.map((e=>{const n=g(ho[e.intlLabelKey]),o=Ja[e.key],s=!!o,l=h.current[e.key];return a.a.createElement(a.a.Fragment,{key:e.key},a.a.createElement(Mo,{key:e.key,ref:t=>f.current[e.key]=t,navLink:e,testID:`main-nav-link-${e.key}`,title:g(ho[e.intlLinkTitleKey?e.intlLinkTitleKey:e.intlLabelKey]),activeTab:t,onMouseEnter:()=>{Jn("global_nav_nav_link",{action:p.ActionType.hover,componentType:p.ComponentType.link,loggingId:Fn,key:e.key}),i(e.key)},onKeyDown:t=>{s&&"Enter"===t.key&&(i(e.key),t.preventDefault(),setTimeout((()=>{var e;null===(e=l[0])||void 0===e||e.focus()}),150))},onClick:()=>{Jn("global_nav_nav_link",{action:p.ActionType.click,componentType:p.ComponentType.link,loggingId:Fn,key:e.key})}},a.a.createElement(Qo,{"data-synthetic-id":e.dataSyntheticId},n)),s&&a.a.createElement(So,{isActive:t===e.key},a.a.createElement(o,{linkRefs:l,isInRewardsHubExperiment:m})))}))),a.a.createElement(Vo,{onMouseEnter:j},T&&a.a.createElement(b.Link,{accessibilityLabel:g(ho.signInLink),to:x,title:g(ho.signInLink),testID:"header-sign-in-button",onClick:D(k)},a.a.createElement(Zo,null,g(ho.signInLink))),I&&!d&&a.a.createElement(Zn,{logEvents:!0,to:w,title:g(L||ho.signUpLink),testID:"header-get-started-button",onClick:v},a.a.createElement(no,null,g(L||ho.signUpLink))),I&&d&&a.a.createElement(_o,null))))),s&&a.a.createElement(qo,{links:s,detached:C})))},Po=Object(n.memo)(Ho),Wo=r.f.div.withConfig({displayName:"esm__DetachedPlaceholder",componentId:"c0ijgk-58"})(ji||(ji=$e||($e=dt`
+  height: 0;
+  ${0};
+`)),(({detached:e})=>e?Object(r.e)(Di||(Di=Ae||(Ae=dt`
+          position: relative;
+          height: ${0}px;
+        `)),66):"")),zo=r.f.header.withConfig({displayName:"esm__OuterWrapper",componentId:"c0ijgk-59"})(Ei||(Ei=Oe||(Oe=dt`
+  position: static;
+  z-index: ${0};
+  width: 100%;
+  height: ${0}px;
+  ${0};
+`)),(({theme:e})=>e.zIndex.high),(({hasSubNav:e,hasBanner:t})=>66+(e?55:0)+(t?37:0)+1),(({detached:e})=>e?Object(r.e)(Mi||(Mi=_e||(_e=dt`
+          position: fixed;
+          top: 0;
+          animation: ${0} ${0}ms
+            cubic-bezier(${0});
+        `)),Fo,m.durations.moderate1,m.curves.global.join(",")):"")),Ro=r.f.div.withConfig({displayName:"esm__Wrapper1",componentId:"c0ijgk-60"})($i||($i=Ne||(Ne=dt`
+  width: 100%;
+  border-bottom: 1px solid ${0};
+  top: 0;
+  background: ${0};
+`)),(e=>e.theme.color.border),(({theme:e})=>e.color.background)),qo=Object(r.f)(wo).withConfig({displayName:"esm__StyledSubNav",componentId:"c0ijgk-61"})(Ai||(Ai=Ke||(Ke=dt`
+  ${0};
+`)),(({detached:e})=>e?Object(r.e)(Oi||(Oi=Se||(Se=dt`
+          ${0} {
+            padding-top: 8px;
+            padding-bottom: 8px;
+          }
+          ${0} {
+            top: -0.5px;
+          }
+          ${0} {
+            top: -0.5px;
+          }
+        `)),Lo,ko,jo):"")),Go=r.f.div.withConfig({displayName:"esm__InnerWrapper",componentId:"c0ijgk-62"})(_i||(_i=Be||(Be=dt`
+  position: relative;
+`))),Yo=r.f.div.withConfig({displayName:"esm__MainNavWrapper",componentId:"c0ijgk-63"})(Ni||(Ni=Ue||(Ue=dt`
+  max-width: ${0}px;
+  margin: 0 auto;
+  display: flex;
+  align-items: stretch;
+  padding: 0 20px;
+  box-sizing: content-box;
+  min-height: 66px;
+`)),(({theme:e,maxWidth:t})=>t?e.layout[t]:e.layout.width)),Jo=r.f.nav.withConfig({displayName:"esm__CenterWrapper",componentId:"c0ijgk-64"})(Ki||(Ki=Fe||(Fe=dt`
+  display: flex;
+  flex: 6;
+  justify-content: center;
+`))),Vo=r.f.div.withConfig({displayName:"esm__ButtonWrapper1",componentId:"c0ijgk-65"})(Si||(Si=He||(He=dt`
+  display: flex;
+  padding: 0 ${0};
+  flex: 2;
+  justify-content: flex-end;
+  align-items: center;
+`)),u.spacing[2]),Qo=Object(r.f)(ia).withConfig({displayName:"esm__NavLinkItemText",componentId:"c0ijgk-66"})(Bi||(Bi=Pe||(Pe=dt`
+  text-align: center;
+`))),Zo=Object(r.f)(ia).withConfig({displayName:"esm__SignInLinkText",componentId:"c0ijgk-67"})(Ui||(Ui=We||(We=dt`
+  display: flex;
+  padding: ${0};
+  flex: 2;
+  justify-content: flex-end;
+  height: 100%;
+  &:hover {
+    color: ${0};
+  }
+`)),u.spacing[2],(({theme:e})=>e.color.textHover));function Xo({isOpen:e}){return a.a.createElement(g.Transition,{in:e,timeout:0,appear:!0},(t=>a.a.createElement(ts,null,a.a.createElement(is,{isOpen:e,color:"text",closeState:"entered"===t}))))}const es=`transition: ${m.durations.moderate3}ms transform, background-color cubic-bezier(${m.curves.global.join(",")});`,ts=r.f.div.withConfig({displayName:"esm__ToggleContainer",componentId:"c0ijgk-68"})(Fi||(Fi=ze||(ze=dt`
+  position: relative;
+  width: ${0};
+  height: ${0};
+  cursor: pointer;
+`)),"18px","17px"),is=r.f.div.withConfig({displayName:"esm__Toggle",componentId:"c0ijgk-69"})(Hi||(Hi=Re||(Re=dt`
+  position: absolute;
+  top: 8px;
+  width: 100%;
+  height: 2px;
+  background-color: ${0};
+  border-radius: 4px;
+  transform: ${0};
+  ${0};
+
+  &:before {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: ${0};
+    border-radius: 4px;
+    content: '';
+    transform: ${0};
+    ${0};
+  }
+
+  &:after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: ${0};
+    border-radius: 4px;
+    content: '';
+    transform: ${0};
+    ${0};
+  }
+`)),(e=>e.closeState?"transparent":e.theme.color[e.color]),(e=>e.closeState?"rotate(45deg)":"initial"),es,(e=>e.theme.color[e.color]),(e=>e.closeState?"translateY(0)":"translateY(-8px)"),es,(e=>e.theme.color[e.color]),(e=>e.closeState?"translateY(0) rotate(-90deg)":"translateY(8px) rotate(0)"),es);const ns=({navLink:e,onClick:t,children:i,activeTab:n})=>{let o={};o=n&&"prices"!==e.key?{"aria-expanded":n.toLocaleLowerCase()===e.key.toLocaleLowerCase(),"aria-controls":"global-nav-mobile-sublinks"}:{};return e.url&&!e.subLinks?a.a.createElement(Zn,{to:e.url,testID:`mobile-menu-${"prices"===e.key?"price":e.key}-link`},a.a.createElement(as,null,i)):a.a.createElement(as,Yn({onClick:t,"data-testid":`mobile-menu-${e.key}-item`,tabIndex:0,onKeyDown:e=>{return"Enter"===(i=e).key&&t&&t(),void("Escape"===i.key&&t&&t());var i}},o),i)},as=r.f.div.withConfig({displayName:"esm__ItemWrapper",componentId:"c0ijgk-70"})(Pi||(Pi=qe||(qe=dt`
+  padding: ${0};
+  display: flex;
+  align-items: center;
+`)),yo),os=({navLinks:e,activeTab:t,setSelectedTab:i,mainCTA:s,isOpen:l,isInRewardsHubExperiment:r})=>{const c=Object(o.a)().formatMessage,d=Object(n.useContext)(zn),p=d.signInUrl,m=d.signUpUrl,u=d.onClickSignIn,b=d.onClickSignUp,g=d.showSignInButton,f=d.showSignUpButton,h=d.showGetStartedButtonOnMobile,y=d.showCoinbaseBytes,x=Xa(s);return a.a.createElement(rs,{id:"global-nav-mobile-dropdown",isOpen:l},e.map((e=>{const n=t===e.key,o=c(ho[e.intlLabelKey]);let s=e.subLinks;var l;"individuals"!==e.key||r||(s=null===(l=e.subLinks)||void 0===l?void 0:l.filter((e=>"rewardsHub"!==e.intlLabelKey)));return a.a.createElement("div",{key:e.key},a.a.createElement(ns,{navLink:e,onClick:()=>{return s&&(n=e.key,void i(t===n?null:n));var n},activeTab:t},a.a.createElement(ps,null,o),s&&a.a.createElement(ds,{isActive:n},a.a.createElement(cs,null))),n&&s&&a.a.createElement(ms,{id:"global-nav-mobile-sublinks"},s.map(((t,i)=>{if(!y&&t.url===Wa)return null;const n=Va[e.key];return a.a.createElement(us,{key:i},a.a.createElement(fs,{to:t.url,testID:`mobile-menu-sublink-${e.key}-${t.intlLabelKey}`},a.a.createElement(aa,null,c(n[t.intlLabelKey]))))}))))})),a.a.createElement(bs,null,f&&h&&a.a.createElement(Zn,{to:m,onClick:b,testID:"header-get-started-button"},a.a.createElement(gs,null,c(x||ho.signUpLink))),g&&a.a.createElement(Zn,{to:p,onClick:u,testID:"header-sign-in-button"},a.a.createElement(hs,null,c(ho.signInLink)))))},ss=Object(n.memo)(os),ls=Object(r.g)(Wi||(Wi=Ge||(Ge=dt`
+  0% {
+    transform: translateY(-750px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+`))),rs=r.f.div.withConfig({displayName:"esm__MenuWrapper",componentId:"c0ijgk-71"})(zi||(zi=Ye||(Ye=dt`
+  ${0}
+  padding-top: 5px;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: calc(100vh - ${0}px);
+  overflow-y: scroll;
+  background: ${0};
+  z-index: ${0};
+`)),(({isOpen:e})=>e?Object(r.e)(Ri||(Ri=Je||(Je=dt`
+          animation: ${0} ${0}ms
+            cubic-bezier(${0});
+          animation-fill-mode: forwards;
+        `)),ls,m.durations.moderate3,m.curves.global.join(",")):""),58,(({theme:e})=>e.color.background),(e=>e.theme.zIndex.hidden)),cs=Object(r.f)((function({color:e="#000"}){return a.a.createElement("svg",{width:"12",height:"8",fill:"none",xmlns:"http://www.w3.org/2000/svg"},a.a.createElement("path",{d:"M6.007 8L11.9 2.107 9.793 0 6.007 3.786 2.221 0 .114 2.107 6.007 8z",fill:e}))})).attrs((({theme:e})=>({color:e.color.text}))).withConfig({displayName:"esm__StyledChevronDown",componentId:"c0ijgk-72"})(qi||(qi=Ve||(Ve=dt``))),ds=r.f.span.withConfig({displayName:"esm__IconWrapper",componentId:"c0ijgk-73"})(Gi||(Gi=Qe||(Qe=dt`
+  transition: transform 0.15s ease-out;
+  ${0};
+`)),(({isActive:e})=>e?Object(r.e)(Yi||(Yi=Ze||(Ze=dt`
+          transform: rotate(180deg);
+        `))):"")),ps=Object(r.f)(aa).withConfig({displayName:"esm__LabelText",componentId:"c0ijgk-74"})(Ji||(Ji=Xe||(Xe=dt`
+  font-weight: 500;
+  flex: 1;
+`))),ms=r.f.div.withConfig({displayName:"esm__SubLinkWrapper",componentId:"c0ijgk-75"})(Vi||(Vi=et||(et=dt`
+  padding: ${0};
+  background: ${0};
+  border-top: 1px solid ${0};
+  border-bottom: 1px solid ${0};
+`)),yo,(({theme:e})=>e.color.backgroundAlt),(({theme:e})=>e.color.white),(({theme:e})=>e.color.white)),us=r.f.div.withConfig({displayName:"esm__SubLinkItemWrapper",componentId:"c0ijgk-76"})(Qi||(Qi=tt||(tt=dt`
+  padding: 17px 0;
+`))),bs=r.f.div.withConfig({displayName:"esm__ButtonWrapper",componentId:"c0ijgk-77"})(Zi||(Zi=it||(it=dt`
+  padding: ${0};
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+`)),yo),gs=Object(r.f)(no).withConfig({displayName:"esm__StyledButton",componentId:"c0ijgk-78"})(Xi||(Xi=nt||(nt=dt`
+  padding: 20px;
+  width: 100%;
+  font-size: 16px;
+  @media screen and (min-width: 600px) {
+    max-width: 300px;
+  }
+`))),fs=Object(r.f)(Zn).withConfig({displayName:"esm__SubLink",componentId:"c0ijgk-79"})(en||(en=at||(at=dt`
+  color: initial;
+`))),hs=Object(r.f)(gs).withConfig({displayName:"esm__SecondaryButton",componentId:"c0ijgk-80"})(tn||(tn=ot||(ot=dt`
+  margin-top: 10px;
+  background: ${0};
+  color: ${0};
+  border-width: 2px;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: ${0};
+  }
+`)),(({theme:e})=>e.color.secondaryButtonFill),(({theme:e})=>e.color.secondaryButtonText),(({theme:e})=>e.color.secondaryButtonFill)),ys=({navLinks:e,activeTab:t,setSelectedTab:i,subNavLinks:s,mainCTA:l,banner:r,isInRewardsHubExperiment:c,customLogoUrl:d})=>{const p=rn(Object(n.useState)(!1),2),m=p[0],u=p[1],b=()=>{u(!m)},g=Object(o.a)().formatMessage,f=Object(n.useContext)(zn),h=f.signUpUrl,y=f.onClickSignUp,x=f.showSignUpButton,w=Xa(l),k={"aria-expanded":!!m,"aria-controls":"global-nav-mobile-dropdown"};return a.a.createElement(a.a.Fragment,null,a.a.createElement(ws,{hasSubNav:!(!s||m),hasBanner:!!r}),a.a.createElement(ks,null,r&&a.a.createElement(co,{message:r.message,url:r.url,onClick:r.onClick,superMessage:r.superMessage,superUrl:r.superUrl}),a.a.createElement(vs,null,a.a.createElement(uo,{customLogoUrl:d}),x&&a.a.createElement(Vo,null,a.a.createElement(Zn,{logEvents:!0,to:h,title:g(w||ho.signUpLink),testID:"header-get-started-button",onClick:y},a.a.createElement(no,null,g(w||ho.signUpLink)))),a.a.createElement(Ts,Yn({onClick:()=>b(),"data-testid":"mobile-menu-toggle",tabIndex:0,onKeyDown:e=>{return"Enter"===(t=e).key&&b(),void("Escape"===t.key&&m&&b());var t}},k),a.a.createElement(Xo,{isOpen:m}))),s&&!m&&a.a.createElement(wo,{links:s}),m&&a.a.createElement(ss,{isOpen:m,activeTab:t,setSelectedTab:i,navLinks:e,mainCTA:l,isInRewardsHubExperiment:c})))},xs=Object(n.memo)(ys),ws=r.f.div.withConfig({displayName:"esm__HeightPlaceholder",componentId:"c0ijgk-81"})(nn||(nn=st||(st=dt`
+  height: ${0}px;
+  position: relative;
+`)),(({hasSubNav:e,hasBanner:t})=>58+(e?55:0)+(t?37:0))),ks=r.f.header.withConfig({displayName:"esm__Wrapper",componentId:"c0ijgk-82"})(an||(an=lt||(lt=dt`
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: ${0};
+  z-index: ${0};
+  /* hack to fix issue with retina screens having 1px top space when using sticky */
+  box-shadow: 0 -1px 0px 1px ${0};
+`)),(({theme:e})=>e.color.background),(({theme:e})=>e.zIndex.high),(({theme:e})=>e.color.background)),vs=r.f.div.withConfig({displayName:"esm__MobileNavWrapper",componentId:"c0ijgk-83"})(on||(on=rt||(rt=dt`
+  max-width: ${0}px;
+  margin: 0 auto;
+  display: flex;
+  align-items: stretch;
+  padding: 0 20px;
+  border-bottom: 1px solid ${0};
+  height: ${0}px;
+  background-color: ${0};
+`)),(e=>e.theme.layout.width),(e=>e.theme.color.border),58,(e=>e.theme.color.background)),Ts=r.f.div.withConfig({displayName:"esm__MenuToggleWrapper",componentId:"c0ijgk-84"})(sn||(sn=ct||(ct=dt`
+  padding: 10px;
+  margin: 10px -10px 10px 20px;
+`))),Is=({subNavLinks:e,mainCTA:t,visibleSections:i=Un,banner:o,maxWidth:s,isInUboExperimentTreatment:l,isInRewardsHubExperiment:r,hideNavLinks:c,customLogoUrl:d})=>{const p=rn(Object(n.useState)(null),2),m=p[0],u=p[1],b=Bn(Hn)?xs:Po,g=c?[]:Za.filter((e=>0===i.length||i.includes(e.key)));return a.a.createElement(b,{navLinks:g,activeTab:m,setSelectedTab:u,subNavLinks:e,mainCTA:t,banner:o,maxWidth:s,isInUboExperimentTreatment:l,isInRewardsHubExperiment:r,customLogoUrl:d})},Ls=Object(n.memo)(Is),Cs=({initIsMobile:e,themeMode:t="default",subNavLinks:i,messages:o,mainCTA:s,locale:c="en",visibleSections:d,showGetStartedButtonOnMobile:p=!0,useRelativeLinks:m,signInUrl:u="https://www.coinbase.com/signin",signUpUrl:b="https://www.coinbase.com/signup",onClickSignIn:g,onClickSignUp:f,productName:h="",productUrl:y="",onClickProductName:x,isJapan:w=!1,isIndia:k=!1,useNewLogo:v=!1,isInUboExperimentTreatment:T=!1,isInRewardsHubExperiment:I=!1,showSignInButton:L=!0,showSignUpButton:C=!0,banner:j,maxWidth:D,showCoinbaseBytes:E,onUrlChange:M,coinbaseAccountsBaseUrl:$,hideNavLinks:A,customLogoUrl:O})=>{const _=$n(t),N=rn(Object(n.useState)(pn(pn({},Wn),{},{signInUrl:u,signUpUrl:b,onClickSignIn:g,onClickSignUp:f,productName:h,productUrl:y,onClickProductName:x,isJapan:w,isIndia:k,useNewLogo:v,showSignInButton:L,showSignUpButton:C,showGetStartedButtonOnMobile:p,showCoinbaseBytes:E})),1)[0];return a.a.createElement(l.a,{messages:o,locale:c},a.a.createElement(An.Provider,{value:!!e},a.a.createElement(Gn.Provider,{value:{baseUrl:m?"":Rn,onUrlChange:M,coinbaseAccountsBaseUrl:$||qn}},a.a.createElement(zn.Provider,{value:N},a.a.createElement(r.c,{theme:_},a.a.createElement(a.a.Fragment,null,a.a.createElement(un,null),a.a.createElement(Ls,{subNavLinks:i,visibleSections:d,mainCTA:s,banner:j,maxWidth:D,isInUboExperimentTreatment:T,isInRewardsHubExperiment:I,hideNavLinks:A,customLogoUrl:O})))))))},js=Object(n.memo)(Cs)}}]);
+//# sourceMappingURL=cbcomponents-a46ccbcad7ae92776244.chunk.js.map

@@ -1,0 +1,180 @@
+.center {
+    background: #F1F5FE;
+    width: 30px;
+    height: 374px;
+    border-radius: 85%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+.navbar-brand{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item{
+    padding: 0 18px;
+    
+}
+.navbar-nav{
+    padding: 0 263px;
+}
+#titletext{
+    font-family: CoinbaseDisplay, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;    font-size: 62px;
+    font-weight: 500;
+    line-height: 71.3px;
+    word-spacing: 0px;
+}
+#titlelink{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.4px;
+    text-decoration:  solid rgb(0, 82, 255);
+    color: #0052FF;
+}
+#titlepara{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.3;
+    text-decoration: none solid rgb(10, 11,13);
+    margin: 0 0 32px 0;
+    padding-top: 8px;
+    font-family: CoinbaseSans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+
+
+.dDaOXh{
+    z-index: 0;
+    flex: 1 1 0px;
+    margin: 0px;
+    padding: 20px;
+    border-radius: 3px;
+    background: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(var(--gray100));
+    border: 1px  transparent;
+    font-family: CoinbaseSans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    box-sizing: border-box;
+
+}
+.emailbox{
+    display: flex;
+    width: 287px;
+
+    flex: 1 1 auto;
+    flex-direction: row;
+    position: relative;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 4px;
+    transition: all 0.15s ease 0s;
+    background: rgb(var(--gray0));
+    box-sizing: border-box;
+}
+
+#getstarted{
+    white-space: nowrap;
+    font-family: CoinbaseSans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.table{
+    width: 61%;
+    /* padding: 5% 102%; */
+    margin: 2% 10%
+}
+
+#heading2{
+    
+    text-align: center;
+    margin-top: 7.5%;
+    font-family: CoinbaseDisplay, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 40px;
+    font-weight: 640;
+    color: var(--foreground);
+}
+#para2{
+    color:gray;
+    text-align: center;
+    padding-top: 8px;
+}
+
+#screenshot2{
+    width: 727px;
+    height: 600px;
+    margin-right: 57px;
+    margin-top: 147px;
+
+}
+.section3{
+    text-align: center;
+    padding-top: 100px;
+}
+
+/* .img{
+    width: 100px;
+} */
+
+/* .img2{
+    padding-left: 849px;
+    padding-top: 122px;
+
+} */
+#img1{
+    width: 162px;
+    margin-left: 358px;
+    margin-top: 184px;
+
+}
+
+#img2{
+    margin-left: 409px;
+    margin-top: 171px;
+}
+
+#sequrity{
+    text-align: center;
+    margin-right: 637px;
+    margin-top: 22px;
+    color: gray;
+}
+#sequrity2{
+    text-align: center;
+    margin-left: 586px;
+    margin-top: -62px;
+    color: gray;
+}
+
+#learnmore{
+    text-decoration: none;
+    line-height: 28px;
+    font-weight: 600;
+}
+.crore{
+    background-color: #0052FF;
+    /* color:#fff ; */
+    height: 200px;
+
+}
+
+
+#crores{
+    color: white;
+}
+
+#crorespara{
+    color: #AEC8FF;
+}
+
+#starting{
+    text-align: center;
+    margin-top: 129px;
+}
+#starting p{
+    color: gray;
+}

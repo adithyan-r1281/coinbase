@@ -1,0 +1,299 @@
+(("undefined"!==typeof self?self:this).webpackJsonp=("undefined"!==typeof self?self:this).webpackJsonp||[]).push([[62],{PCWg:function(e,t,o){"use strict";o.d(t,"a",(function(){return un})),o.d(t,"b",(function(){return nn})),o.d(t,"c",(function(){return Et})),o.d(t,"d",(function(){return Ht})),o.d(t,"e",(function(){return Rt}));o("hIRW");var n=o("FyRH"),r=o.n(n),i=o("2W1i"),a=o.n(i),s=o("TW2t"),c=o("hWgQ"),l=o("gN02"),d=o("ZdST"),u=o("UutA"),m=o("IPNR"),p=o("Utsy"),f=o("wngC"),g=o("AIR8"),h=o("hRCI"),b=o.n(h);let y,k,w,C,x,v,E,O,$,_,j,M,T,D,I,A,z,B,N,S,P,F,R,L,W,U,H,V,q,Z,J,K,Q,Y,G,X,ee,te,oe,ne,re,ie,ae,se,ce,le,de,ue,me,pe,fe,ge,he,be,ye,ke,we,Ce,xe,ve,Ee,Oe,$e,_e,je,Me,Te,De,Ie,Ae,ze,Be,Ne,Se,Pe,Fe,Re,Le,We,Ue,He,Ve,qe,Ze,Je,Ke,Qe,Ye,Ge,Xe,et=e=>e;const tt=["children","initialValues"],ot=["theme"];function nt(e,t){var o=Object.keys(e);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(e);t&&(n=n.filter((function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable}))),o.push.apply(o,n)}return o}function rt(e){for(var t=1;t<arguments.length;t++){var o=null!=arguments[t]?arguments[t]:{};t%2?nt(Object(o),!0).forEach((function(t){it(e,t,o[t])})):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(o)):nt(Object(o)).forEach((function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(o,t))}))}return e}function it(e,t,o){return t in e?Object.defineProperty(e,t,{value:o,enumerable:!0,configurable:!0,writable:!0}):e[t]=o,e}function at(e,t){return ut(e)||function(e,t){var o=null==e?null:"undefined"!==typeof Symbol&&e[Symbol.iterator]||e["@@iterator"];if(null==o)return;var n,r,i=[],a=!0,s=!1;try{for(o=o.call(e);!(a=(n=o.next()).done)&&(i.push(n.value),!t||i.length!==t);a=!0);}catch(c){s=!0,r=c}finally{try{a||null==o.return||o.return()}finally{if(s)throw r}}return i}(e,t)||lt(e,t)||ct()}function st(e){return ut(e)||function(e){if("undefined"!==typeof Symbol&&null!=e[Symbol.iterator]||null!=e["@@iterator"])return Array.from(e)}(e)||lt(e)||ct()}function ct(){throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}function lt(e,t){if(e){if("string"===typeof e)return dt(e,t);var o=Object.prototype.toString.call(e).slice(8,-1);return"Object"===o&&e.constructor&&(o=e.constructor.name),"Map"===o||"Set"===o?Array.from(e):"Arguments"===o||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(o)?dt(e,t):void 0}}function dt(e,t){(null==t||t>e.length)&&(t=e.length);for(var o=0,n=new Array(t);o<t;o++)n[o]=e[o];return n}function ut(e){if(Array.isArray(e))return e}function mt(e,t){if(null==e)return{};var o,n,r=function(e,t){if(null==e)return{};var o,n,r={},i=Object.keys(e);for(n=0;n<i.length;n++)o=i[n],t.indexOf(o)>=0||(r[o]=e[o]);return r}(e,t);if(Object.getOwnPropertySymbols){var i=Object.getOwnPropertySymbols(e);for(n=0;n<i.length;n++)o=i[n],t.indexOf(o)>=0||Object.prototype.propertyIsEnumerable.call(e,o)&&(r[o]=e[o])}return r}const pt="cm_eu_preferences",ft="cm_default_preferences",gt=["necessary","functional","performance","targeting"],ht=[pt,ft],bt=[{region:"DEFAULT",framework:"optOut"},{region:"EU",framework:"optIn"}],yt=e=>{const t={};return Object.keys(e).forEach((o=>{try{t[o]=JSON.parse(e[o])}catch(n){t[o]=e[o]}})),t};let kt,wt=[];"undefined"!==typeof window&&(kt=document.cookie,setInterval((()=>{kt!==document.cookie&&(kt=document.cookie,wt.forEach((e=>e())))}),500));const Ct=e=>{const t=Object(n.useMemo)((()=>({getCurrentValue:()=>{return t=e,"undefined"===typeof window&&t?yt(t):yt(a.a.get()||{});var t},subscribe:e=>function(e){return wt.push(e),()=>{wt=wt.filter((t=>t!==e))}}(e)})),[e]);return Object(s.useSubscription)(t)},xt=Object(n.createContext)(null),vt=()=>{const e=Object(n.useContext)(xt);if(!e)throw new Error("Cookie manager not provided");return e},Et=e=>{let t=e.children,o=e.initialValues,n=mt(e,tt);return r.a.createElement(xt.Provider,{value:n},r.a.createElement(St,{initialValues:o},t))},Ot=e=>{const t=bt.find((t=>t.region===e));if(!t){const e=bt.find((e=>"DEFAULT"===e.region));return!(null===e||void 0===e||!e.framework)&&"optOut"===e.framework}return"optOut"===t.framework},$t=(e,t)=>{if(!Ot(e)){return{region:e,consent:t.categories.map((e=>{if(e.required)return e.id})).filter((e=>!!e))}}return{region:e,consent:t.categories.map((e=>e.id)).filter((e=>"delete-if-seen"!==e))}};function _t(){if("undefined"!==typeof window)return window.location.hostname}function jt(){const e=_t();if(!e)return;if("localhost"===e)return e;return`.${st(e.split(".")).slice(1).join(".")}`}const Mt=(e,t)=>{if(e.regex){return new RegExp(e.regex).test(t)}return e.id===t},Tt=(e,t)=>t.categories.find((t=>t.trackers.find((t=>Mt(t,e))))),Dt=(e,t)=>{const o=Tt(e,t);return null===o||void 0===o?void 0:o.trackers.find((t=>Mt(t,e)))},It=(e,t,o)=>{const n=Tt(e,t);return!n||(!!n.required||(!!ht.includes(e)||o.consent.includes(n.id)))},At=(e,t)=>2*e.length/1e3>t,zt=e=>{"undefined"!==typeof window&&(window.dataLayer||(window.dataLayer=[]),window.dataLayer.push({consent:e.consent}))},Bt="undefined"===typeof window?n.useEffect:n.useLayoutEffect,Nt=Object(n.createContext)([{}]),St=({children:e,initialValues:t})=>{const o=vt(),i=o.config,s=o.region,c=o.shadowMode,l=o.log,d=o.onPreferenceChange,u=Object(n.useCallback)((e=>{e.forEach((e=>{c||(a.a.remove(e,{domain:jt(),path:"/"}),a.a.remove(e,{domain:_t(),path:"/"})),l("Cookie does not have consent and will be removed",{cookie:e})}))}),[c,l]),m=Ct(t),p=Ft(m,s,i);return Bt((()=>{zt(p)}),[]),Object(n.useEffect)((()=>{const e=[];Object.keys(m).forEach((t=>{const o=Dt(t,i);ht.includes(t)||o&&(It(t,i,p)||"cookie"!==o.type)||e.push(t)})),u(e)}),[]),Object(n.useEffect)((()=>{d&&d(p)}),[]),r.a.createElement(Nt.Provider,{value:m},e)},Pt=({cookieName:e,trackingPreference:t,config:o,shadowMode:n,log:r,onError:i})=>(s,c)=>{if(void 0===s||null===s)return void a.a.remove(e,c);const l=It(e,o,t);if(l||n){const t=JSON.stringify(s);At(t+e,4)?i(new Error(`${e} value exceeds 4KB`)):a.a.set(e,t,c)}l||r("Cookie does not have consent and will not be set",{cookie:e})},Ft=(e,t,o)=>("EU"===t?e.cm_eu_preferences:e.cm_default_preferences)||$t(t,o),Rt=e=>{const t=Object(n.useContext)(Nt),o=vt(),r=o.config,i=o.region,a=o.log,s=o.shadowMode,c=o.onError,l=Ft(t,i,r),d=Pt({cookieName:e,trackingPreference:l,config:r,log:a,shadowMode:s,onError:c});return[Object(n.useContext)(Nt)[e],d]},Lt=()=>{const e=vt(),t=e.region,o=e.onError,n=at(Rt(pt),1)[0],r=at(Rt(ft),1)[0],i="EU"===t?n:r;if(i){if(i.region&&i.consent)return i;o(new Error("Malformed preferences"))}},Wt=()=>{const e=Lt(),t=vt(),o=t.region,n=t.config;return e||$t(o,n)};const Ut="cb_test_cookie",Ht=()=>{a.a.set(Ut,"test");const e=!!a.a.get(Ut);return a.a.remove(Ut),e},Vt={colors:{primary:"#1652F0",positive:"#05B169",negative:"#DF5F67",warning:"#F4C622",background:"#FFFFFF",backgroundMuted:"#FAFBFC",onBackground:"#050F1A",onBackgroundMuted:"#708599",onPrimary:"#FFFFFF",overlay:"rgba(17,52,83,0.6)"},border:{border:"1px solid #D8D8D8",borderRadius:"4px"},fontSize:{sm:"14px",md:"16px"},fontWeight:{regular:"400",bold:"500"},size:{xs:"8px",sm:"16px",md:"24px",lg:"32px"},breakpoints:{phone:560,desktop:992,tablet:768},zIndex:{hidden:-1,normal:0,elevated:1,high:2,extraHigh:25,backdrop:999,overlay:1e3,top:1001}},qt=(e,t,o,n)=>{const r={expires:730,domain:jt(),path:"/"};e("EU"===o?pt:ft,t,r),n&&n(t)},Zt=()=>vt().config.categories.filter((e=>e.required)).reduce(((e,t)=>[...e,t.id]),[]),Jt=()=>{const e=vt(),t=e.region,o=e.onPreferenceChange,r=e.onError,i=(()=>{const e=Object(n.useContext)(Nt),t=vt(),o=t.config,r=t.region,i=t.log,a=t.shadowMode,s=t.onError,c=Ft(e,r,o);return Object(n.useCallback)(((e,t,n)=>{Pt({cookieName:e,trackingPreference:c,config:o,log:i,shadowMode:a,onError:s})(t,n)}),[c,o,i,a,s])})(),a=Zt();return Object(n.useCallback)((e=>{const n=e;a.forEach((t=>{e.consent.includes(t)||(r(new Error(`Trying to remove category ${t} that is required`)),n.consent=[...e.consent,t])})),qt(i,n,t,o)}),[o,t,i,a,r])},Kt=100,Qt=e=>{const t=at(Object(n.useState)(!e),2),o=t[0],r=t[1];Object(n.useEffect)((()=>{const t=setTimeout((()=>r(e)),Kt);return()=>clearTimeout(t)}),[e]);return[o,Object(n.useCallback)((e=>{r(!1),e&&setTimeout(e,Kt)}),[r])]},Yt=u.f.button.withConfig({displayName:"esm__Button",componentId:"sc-1rxtuo-0"})(le||(le=y||(y=et`
+  ${0}
+`)),(({theme:e,large:t})=>Object(u.e)(de||(de=k||(k=et`
+    background-color: ${0};
+    font-size: ${0};
+    color: ${0};
+    padding: ${0};
+    border: ${0};
+    border-color: ${0};
+    border-radius: ${0};
+    width: ${0};
+    cursor: pointer;
+    white-space: nowrap;
+  `)),e.colors.primary,e.fontSize.sm,e.colors.onPrimary,t?`${e.size.sm} ${e.size.md}`:`${e.size.xs} ${e.size.md}`,e.border.border,e.colors.primary,e.border.borderRadius,t?"100%":"fit-content"))),Gt=Object(u.f)((({size:e="16",className:t,onClick:o})=>r.a.createElement("svg",{xmlns:"http://www.w3.org/2000/svg",viewBox:"0 0 20 20",width:e,height:e,className:t,onClick:o},r.a.createElement("g",null,r.a.createElement("polygon",{points:"18.096 19.174 19.497 17.747 1.7 .286 .3 1.714"}),r.a.createElement("polygon",{points:"19.497 1.714 18.096 .286 .3 17.747 1.7 19.174"}))))).withConfig({displayName:"esm__CloseIcon",componentId:"sc-1rxtuo-1"})(ue||(ue=w||(w=et`
+  fill: ${0};
+
+  cursor: pointer;
+  transition: fill 0.15s ease;
+
+  &:hover {
+    fill: ${0};
+  }
+`)),(({inverted:e,theme:t})=>e?t.colors.background:t.colors.onBackgroundMuted),(({theme:e,inverted:t})=>t?e.colors.background:e.colors.onBackground)),Xt=u.f.a.withConfig({displayName:"esm__Link",componentId:"sc-1rxtuo-2"})(me||(me=C||(C=et`
+  text-decoration: underline;
+  color: ${0};
+  &:visited {
+    color: ${0};
+  }
+`)),(({theme:e,color:t})=>"foregroundMuted"===t?m.palette.foregroundMuted:"primary"===t?e.colors.primary:e.colors.onBackgroundMuted),(({theme:e,color:t})=>"foregroundMuted"===t?m.palette.foregroundMuted:"primary"===t?e.colors.primary:e.colors.onBackgroundMuted)),eo=({children:e,color:t="light"})=>r.a.createElement(Xt,{color:t,href:"https://www.coinbase.com/legal/cookie",target:"_blank",rel:"noopener"},e),to=u.f.div.withConfig({displayName:"esm__Spacer",componentId:"sc-1rxtuo-3"})(pe||(pe=x||(x=et`
+  ${0}
+`)),(({theme:e,size:t,vertical:o})=>o?`\n        width: ${e.size[t]};\n        height: 100%;\n        `:`\n        height: ${e.size[t]};\n        width: 100%;\n      `)),oo=Object(c.a)({defaultBannerDescription:{id:"CookieManager.defaultBannerDescription",defaultMessage:"We use our own and third-party cookies on our websites to enhance your experience, analyze traffic, and for security and marketing. For more info or to modify cookies, see our <link>Cookie Policy</link> or go to <button>Manage Settings</button>."},euBannerDescription:{id:"CookieManager.euBannerDescription",defaultMessage:'We use our own cookies as well as third-party cookies on our websites to enhance your experience, analyze our traffic, and for security and marketing. Select "Accept All" to allow them to be used. <link>Cookie Policy</link>'},bannerSettingsCTA:{id:"CookieManager.bannerSettingsCTA",defaultMessage:"Manage settings"},bannerDismissCTA:{id:"CookieManager.bannerDismissCTA",defaultMessage:"Dismiss"},bannerAcceptCTA:{id:"CookieManager.bannerAcceptCTA",defaultMessage:"Accept all"},modalTitle:{id:"CookieManager.modalTitle",defaultMessage:"Cookie preferences"},modalDescription:{id:"CookieManager.modalDescription",defaultMessage:"When you visit our website, we may store cookies on your browser for your security and to help us better understand user behavior and inform us about which parts of our website you have visited. The information does not usually directly identify you, but it can give you a safe and more personalized web experience. Because we respect your right to privacy, you can choose not to allow some types of cookies. Blocking some types of cookies may impact your experience on the site. <link>Cookie Policy</link>"},manageCookies:{id:"CookieManager.manageCookies",defaultMessage:"Manage Cookies:"},necessaryCookies:{id:"CookieManager.necessaryCookies",defaultMessage:"Strictly Necessary Cookies"},necessaryCookiesDescription:{id:"CookieManager.necessaryCookiesDescription",defaultMessage:"These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. These also include cookies we may rely on for fraud prevention. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work."},performanceCookies:{id:"CookieManager.performanceCookies",defaultMessage:"Performance Cookies"},performanceCookiesDescription:{id:"CookieManager.performanceCookiesDescription",defaultMessage:"These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site. All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance."},functionalCookies:{id:"CookieManager.functionalCookies",defaultMessage:"Functional Cookies"},functionalCookiesDescription:{id:"CookieManager.functionalCookiesDescription",defaultMessage:"These cookies enable us to remember choices you have made in the past in order to provide enhanced functionality and personalisation (e.g. what language you prefer). If you do not allow these cookies then some or all of these services may not function properly."},targetingCookies:{id:"CookieManager.targetingCookies",defaultMessage:"Targeting Cookies"},targetingCookiesDescription:{id:"CookieManager.targetingCookiesDescription",defaultMessage:"These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant ads on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising."},saveCTA:{id:"CookieManager.saveCTA",defaultMessage:"Save"}}),no={labelIds:{necessary:oo.necessaryCookies,performance:oo.performanceCookies,functional:oo.functionalCookies,targeting:oo.targetingCookies},contentIds:{necessary:oo.necessaryCookiesDescription,performance:oo.performanceCookiesDescription,functional:oo.functionalCookiesDescription,targeting:oo.targetingCookiesDescription}},ro={defaultMessages:rt({defaultBannerDescription:oo.defaultBannerDescription,bannerSettingsCTA:oo.bannerSettingsCTA,bannerMainCTA:oo.bannerDismissCTA,bannerDismissCTA:oo.bannerDismissCTA,modalTitle:oo.modalTitle,modalDescription:oo.modalDescription,manageCookies:oo.manageCookies,saveCTA:oo.saveCTA},no),euMessages:rt({defaultBannerDescription:oo.euBannerDescription,bannerSettingsCTA:oo.bannerSettingsCTA,bannerMainCTA:oo.bannerAcceptCTA,bannerDismissCTA:oo.bannerDismissCTA,modalTitle:oo.modalTitle,modalDescription:oo.modalDescription,manageCookies:oo.manageCookies,saveCTA:oo.saveCTA},no)},io=()=>"EU"===vt().region?ro.euMessages:ro.defaultMessages,ao=e=>[r.a.createElement(eo,{key:"CookieLink"},e)],so=({onDismiss:e,onAccept:t,showPreferencesModal:o,hasDismissed:i})=>{const a=vt().log,s=at(Qt(!i),2),c=s[0],d=s[1];Object(n.useEffect)((()=>{i||a("cookie_consent_footer_viewed")}),[]);const u=Object(n.useCallback)((()=>{a("cookie_consent_footer_dismissed"),d(e)}),[e,d,a]),m=Object(n.useCallback)((()=>{d(t)}),[t,d]),p=Object(l.a)().formatMessage,f=io();return i?null:r.a.createElement(go,{visible:c},r.a.createElement(lo,{onClick:u,"aria-label":p(f.bannerDismissCTA)},r.a.createElement(Gt,{inverted:!0,size:"10"})),r.a.createElement(fo,null,p(f.defaultBannerDescription,{link:ao,button:e=>[r.a.createElement(ho,{key:"ManageCookieSettingsBtn",onClick:o,"aria-haspopup":!0},e)]})),r.a.createElement(mo,null,r.a.createElement(po,{onClick:o},p(f.bannerSettingsCTA)),r.a.createElement(to,{size:"md",vertical:!0}),r.a.createElement(Yt,{onClick:m},p(f.bannerMainCTA))),r.a.createElement(uo,{onClick:u,"aria-label":p(f.bannerDismissCTA)},r.a.createElement(Gt,{inverted:!0,size:"10"})))},co=u.f.button.withConfig({displayName:"esm__DismissButton",componentId:"sc-1rxtuo-4"})(fe||(fe=v||(v=et`
+  background-color: ${0};
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+  padding: 0;
+  cursor: pointer;
+`)),(({theme:e})=>e.colors.onBackgroundMuted)),lo=Object(u.f)(co).withConfig({displayName:"esm__MobileDismissButton",componentId:"sc-1rxtuo-5"})(ge||(ge=E||(E=et`
+  ${0}
+`)),(({theme:e})=>Object(u.e)(he||(he=O||(O=et`
+    display: none;
+    @media (max-width: ${0}px) {
+      display: block;
+      align-self: flex-end;
+      margin: ${0} 0;
+    }
+  `)),e.breakpoints.tablet,e.size.xs))),uo=Object(u.f)(co).withConfig({displayName:"esm__DesktopDismissButton",componentId:"sc-1rxtuo-6"})(be||(be=$||($=et`
+  @media (max-width: ${0}px) {
+    display: none;
+  }
+`)),(({theme:e})=>e.breakpoints.tablet)),mo=u.f.div.withConfig({displayName:"esm__CTA1",componentId:"sc-1rxtuo-7"})(ye||(ye=_||(_=et`
+  ${0}
+`)),(({theme:e})=>Object(u.e)(ke||(ke=j||(j=et`
+    display: flex;
+    align-items: center;
+    margin-right: ${0};
+    @media (max-width: ${0}px) {
+      margin-right: 0;
+    }
+  `)),e.size.lg,e.breakpoints.tablet))),po=u.f.button.withConfig({displayName:"esm__SettingsCTA",componentId:"sc-1rxtuo-8"})(we||(we=M||(M=et`
+  color: ${0};
+  font-size: ${0};
+  background-color: transparent;
+  border: none;
+  white-space: nowrap;
+  cursor: pointer;
+`)),(({theme:e})=>e.colors.primary),(({theme:e})=>e.fontSize.sm)),fo=u.f.div.withConfig({displayName:"esm__DescriptionText1",componentId:"sc-1rxtuo-9"})(Ce||(Ce=T||(T=et`
+  ${0}
+`)),(({theme:e})=>Object(u.e)(xe||(xe=D||(D=et`
+    font-size: ${0};
+    width: 734px;
+    line-height: 23px;
+    margin-right: ${0};
+
+    @media (max-width: ${0}px) {
+      width: auto;
+      margin-right: 0;
+      margin-bottom: ${0};
+    }
+  `)),e.fontSize.sm,e.size.lg,e.breakpoints.tablet,e.size.md))),go=u.f.div.withConfig({displayName:"esm__Container3",componentId:"sc-1rxtuo-10"})(ve||(ve=I||(I=et`
+  ${0}
+`)),(({theme:e,visible:t})=>Object(u.e)(Ee||(Ee=A||(A=et`
+    display: flex;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: ${0};
+    z-index: ${0};
+    color: ${0};
+    padding: ${0};
+    justify-content: space-between;
+    ${0};
+    transition: bottom ${0}ms;
+    @media (max-width: ${0}px) {
+      flex-direction: column;
+      padding: ${0};
+      ${0};
+    }
+  `)),e.colors.backgroundMuted,e.zIndex.extraHigh,e.colors.onBackgroundMuted,`${e.size.md} 60px ${e.size.md} 160px`,t?"bottom: 0":"bottom: -140px",Kt,e.breakpoints.tablet,`0 ${e.size.md} ${e.size.md}`,t?"bottom: 0":"bottom: -200px"))),ho=u.f.button.withConfig({displayName:"esm__ManageSettingsButton1",componentId:"sc-1rxtuo-11"})(Oe||(Oe=z||(z=et`
+  background: transparent;
+  border: none;
+  white-space: nowrap;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  color: ${0};
+`)),(({theme:e})=>e.colors.onBackgroundMuted)),bo=Object(n.memo)(so),yo=e=>[r.a.createElement(eo,{key:"PrivacyLink",color:"foregroundMuted"},e)],ko=({onDismiss:e,showPreferencesModal:t,hasDismissed:o})=>{const i=vt().log;Object(n.useEffect)((()=>{o||i("cookie_consent_footer_viewed")}),[]);const a=Object(n.useCallback)((()=>{i("cookie_consent_footer_dismissed"),null===e||void 0===e||e()}),[e,i]),s=Object(l.a)().formatMessage,c=io();return o?null:r.a.createElement(wo,null,r.a.createElement(g.ThemeProvider,null,r.a.createElement(f.Box,{alignItems:"center",justifyContent:"center",spacing:2,elevation:1,background:!0},r.a.createElement(xo,null,s(c.defaultBannerDescription,{link:yo,button:e=>[r.a.createElement(vo,{key:"ManageCookieSettingsExpBtn",onClick:t,"aria-haspopup":!0},e)]})),r.a.createElement(Co,null,r.a.createElement(p.IconButton,{name:"gear",onPress:t,variant:"primary",accessibilityLabel:s(c.bannerSettingsCTA),transparent:!0}),r.a.createElement(p.IconButton,{name:"close",onPress:a,variant:"primary",accessibilityLabel:s(c.bannerDismissCTA),transparent:!0})))))},wo=u.f.div.withConfig({displayName:"esm__Wrapper1",componentId:"sc-1rxtuo-12"})($e||($e=B||(B=et`
+  ${0}
+`)),(({theme:e})=>Object(u.e)(_e||(_e=N||(N=et`
+    position: sticky;
+    bottom: 0;
+    z-index: ${0};
+  `)),e.zIndex.extraHigh))),Co=u.f.div.withConfig({displayName:"esm__CTA",componentId:"sc-1rxtuo-13"})(je||(je=S||(S=et`
+  ${0}
+`)),(({theme:e})=>Object(u.e)(Me||(Me=P||(P=et`
+    display: flex;
+    align-items: center;
+    @media (max-width: ${0}px) {
+      position: absolute;
+      right: ${0};
+      bottom: ${0};
+      transform: none;
+    }
+  `)),e.breakpoints.tablet,m.spacing[2],m.spacing[.5]))),xo=u.f.div.withConfig({displayName:"esm__DescriptionText",componentId:"sc-1rxtuo-14"})(Te||(Te=F||(F=et`
+  ${0}
+`)),(({theme:e})=>Object(u.e)(De||(De=R||(R=et`
+    font-size: ${0};
+    color: ${0};
+    line-height: ${0};
+    padding-left: ${0};
+    padding-right: ${0};
+    max-width: 1000px;
+    @media (max-width: ${0}px) {
+      padding: 0;
+      padding-bottom: ${0};
+    }
+  `)),e.fontSize.sm,m.palette.foregroundMuted,m.spacing[3],m.spacing[3],m.spacing[10],e.breakpoints.tablet,m.spacing[3]))),vo=u.f.button.withConfig({displayName:"esm__ManageSettingsButton",componentId:"sc-1rxtuo-15"})(Ie||(Ie=L||(L=et`
+  background: transparent;
+  border: none;
+  white-space: nowrap;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  color: ${0};
+`)),m.palette.foregroundMuted),Eo=Object(n.memo)(ko),Oo=u.f.span.withConfig({displayName:"esm__Text",componentId:"sc-1rxtuo-16"})(Ae||(Ae=W||(W=et`
+  font-size: ${0};
+  color: ${0};
+  font-weight: ${0};
+  line-height: 160%;
+`)),(({theme:e})=>e.size.sm),(({theme:e})=>e.colors.onBackground),(({theme:e,bold:t})=>t?e.fontWeight.bold:e.fontWeight.regular)),$o=Object(u.f)((({className:e})=>r.a.createElement("svg",{width:"16",height:"16",viewBox:"0 0 16 16",fill:"none",xmlns:"http://www.w3.org/2000/svg",className:e},r.a.createElement("path",{d:"M8 0C3.59 0 0 3.59 0 8C0 12.41 3.59 16 8 16C12.41 16 16 12.41 16 8C16 3.59 12.41 0 8 0ZM8 15C4.14 15 1 11.86 1 8C1 4.14 4.14 1 8 1C11.86 1 15 4.14 15 8C15 11.86 11.86 15 8 15Z",fill:"#718598"}),r.a.createElement("path",{d:"M8.5 7.5H7.5V12H8.5V7.5Z",fill:"#718598"}),r.a.createElement("path",{d:"M8.5 4H7.5V6H8.5V4Z",fill:"#718598"})))).withConfig({displayName:"esm__InfoIcon",componentId:"sc-1rxtuo-17"})(ze||(ze=U||(U=et`
+  cursor: pointer;
+`))),_o=Object(n.forwardRef)((function({content:e},t){return r.a.createElement(jo,null,r.a.createElement(Mo,{ref:t},r.a.createElement(Do,null),r.a.createElement(To,null,e)))})),jo=u.f.div.withConfig({displayName:"esm__ToolTipContainer",componentId:"sc-1rxtuo-18"})(Be||(Be=H||(H=et`
+  position: relative;
+`))),Mo=u.f.div.withConfig({displayName:"esm__Tip",componentId:"sc-1rxtuo-19"})(Ne||(Ne=V||(V=et`
+  position: absolute;
+  bottom: ${0}px;
+  max-width: 330px;
+  min-height: 90px;
+  background-color: ${0};
+  border-radius: ${0};
+  border: 1px solid ${0};
+  padding: 12px;
+  width: max-content;
+`)),18,(({theme:e})=>e.colors.onBackground),(({theme:e})=>e.border.borderRadius),(({theme:e})=>e.colors.onBackground)),To=u.f.span.withConfig({displayName:"esm__TooltipText",componentId:"sc-1rxtuo-20"})(Se||(Se=q||(q=et`
+  font-size: 12px;
+  line-height: 14px;
+  color: ${0};
+`)),(({theme:e})=>e.colors.background)),Do=u.f.div.withConfig({displayName:"esm__Arrow",componentId:"sc-1rxtuo-21"})(Pe||(Pe=Z||(Z=et`
+  position: absolute;
+  bottom: -${0}px;
+  left: calc(50% - ${0}px);
+  width: 0;
+  height: 0;
+  border-left: ${0}px solid transparent;
+  border-right: ${0}px solid transparent;
+  border-top: ${0}px solid
+    ${0};
+`)),17,8,16,16,18,(({theme:e})=>e.colors.onBackground)),Io=_o,Ao=({content:e})=>{var t,o;const i=(()=>{const e=at(Object(n.useState)(!1),2),t=e[0],o=e[1],r=Object(n.useRef)(null),i=at(Object(n.useState)(),2),a=i[0],s=i[1];return Object(n.useEffect)((()=>{if(!r.current)return;if(a||!t)return;const e=r.current.getBoundingClientRect(),o={left:-e.width/2,top:0};window.innerWidth-e.right-o.left<0&&(o.left=Math.round(window.innerWidth-e.right)),e.left+o.left<0&&(o.left=Math.round(Math.abs(e.left))),window.innerHeight-e.bottom<0&&(o.top=Math.round(window.innerHeight-e.bottom)),e.top<0&&(o.top=Math.round(Math.abs(e.top))),s(o)}),[r,t]),{shouldRender:t,setShouldRender:o,tooltipRef:r,offset:a,isVisible:!(!t||!a)}})(),a=i.shouldRender,s=i.setShouldRender,c=i.offset,l=i.tooltipRef,d=i.isVisible;return r.a.createElement(zo,{onMouseEnter:()=>s(!0),onMouseLeave:()=>s(!1)},a&&r.a.createElement(Bo,{key:"tooltip",style:{left:null!==(t=null===c||void 0===c?void 0:c.left)&&void 0!==t?t:0,top:null!==(o=null===c||void 0===c?void 0:c.top)&&void 0!==o?o:0},visible:d},r.a.createElement(Io,{content:e,ref:l})),r.a.createElement($o,null))},zo=u.f.div.withConfig({displayName:"esm__Container2",componentId:"sc-1rxtuo-22"})(Fe||(Fe=J||(J=et`
+  /*
+  * Invisible extra padding to prevent losing focus as
+  * the mouse moves to the tooltip
+  */
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: ${0}px;
+    height: ${0}px;
+    bottom: ${0}px;
+  }
+`)),16,18,18),Bo=u.f.div.withConfig({displayName:"esm__Wrapper",componentId:"sc-1rxtuo-23"})(Re||(Re=K||(K=et`
+  position: relative;
+  opacity: ${0};
+  transition: opacity 100ms;
+`)),(({visible:e})=>e?"1":"0")),No=Object(n.memo)(Ao),So=({name:e})=>{const t=Object(l.a)().formatMessage,o=io();if("delete-if-seen"===e)return null;const n=o.labelIds[e],i=o.contentIds[e];return n&&i?r.a.createElement(r.a.Fragment,null,r.a.createElement(Oo,null,t(n)),r.a.createElement(to,{size:"sm",vertical:!0}),r.a.createElement(No,{content:t(i)}),r.a.createElement(to,{size:"xs",vertical:!0})):null},Po=Object(n.memo)(So),Fo=Object(u.f)((()=>r.a.createElement("svg",{width:"14",height:"10",viewBox:"0 0 14 10",fill:"none",xmlns:"http://www.w3.org/2000/svg"},r.a.createElement("path",{d:"M1 5.36364L4.75 9L13 1",stroke:"white",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round"})))).withConfig({displayName:"esm__CheckIcon",componentId:"sc-1rxtuo-24"})(Le||(Le=Q||(Q=et`
+  fill: ${0};
+  cursor: pointer;
+`)),(({theme:e})=>e.colors.onPrimary)),Ro=u.f.input.withConfig({displayName:"esm__Input",componentId:"sc-1rxtuo-25"})(We||(We=Y||(Y=et`
+  position: absolute;
+  opacity: 0;
+  ${0};
+  width: 100%;
+  height: 100%;
+  margin: 0;
+`)),(({disabled:e})=>e?"":"cursor: pointer;")),Lo=u.f.div.withConfig({displayName:"esm__Container1",componentId:"sc-1rxtuo-26"})(Ue||(Ue=G||(G=et`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+`))),Wo=u.f.div.withConfig({displayName:"esm__Box",componentId:"sc-1rxtuo-27"})(He||(He=X||(X=et`
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: ${0};
+  ${0};
+  ${0};
+  border-radius: 3px;
+  border: ${0};
+  width: ${0};
+  height: ${0};
+`)),(({theme:e,checked:t})=>t?e.colors.primary:e.colors.background),(({disabled:e})=>e&&"opacity: 50%;"),(({disabled:e})=>e?"":"cursor: pointer;"),(({theme:e})=>e.border.border),(({theme:e})=>e.size.md),(({theme:e})=>e.size.md)),Uo=({onChange:e,disabled:t,checked:o,children:n})=>r.a.createElement(Lo,null,r.a.createElement(Wo,{disabled:t,checked:o},o&&r.a.createElement(Fo,null),r.a.createElement(Ro,{type:"checkbox",checked:o,onClick:t?void 0:()=>{e(!o)},disabled:t})),r.a.createElement(to,{size:"xs",vertical:!0}),n),Ho=u.f.div.withConfig({displayName:"esm__Overlay",componentId:"sc-1rxtuo-28"})(Ve||(Ve=ee||(ee=et`
+  width: 100%;
+  height: 100%;
+  background-color: ${0};
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: scroll;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: ${0};
+  transition: opacity ${0}ms;
+  z-index: ${0};
+`)),(({theme:e})=>e.colors.overlay),(({visible:e})=>e?"1":"0"),Kt,(({theme:e})=>e.zIndex.overlay)),Vo=({title:e,close:t})=>r.a.createElement(Zo,null,e&&r.a.createElement(Jo,{"data-synthetic-id":"modal_cookies"},e),t&&r.a.createElement(Gt,{onClick:t})),qo=u.f.div.withConfig({displayName:"esm__ModalBody",componentId:"sc-1rxtuo-29"})(qe||(qe=te||(te=et`
+  display: flex;
+  padding: ${0};
+`)),(({theme:e})=>`${e.size.lg} ${e.size.md}`)),Zo=u.f.div.withConfig({displayName:"esm__Header",componentId:"sc-1rxtuo-30"})(Ze||(Ze=oe||(oe=et`
+  display: flex;
+  position: relative;
+  min-height: 64px;
+  padding: ${0};
+  border-bottom: ${0};
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+`)),(e=>e.theme.size.md),(e=>e.theme.border.border)),Jo=u.f.span.withConfig({displayName:"esm__Title",componentId:"sc-1rxtuo-31"})(Je||(Je=ne||(ne=et`
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  color: ${0};
+`)),(e=>e.theme.colors.onBackground)),Ko=u.f.div.withConfig({displayName:"esm__ModalContainer",componentId:"sc-1rxtuo-32"})(Ke||(Ke=re||(re=et`
+  height: auto;
+  margin: 100px 0 24px;
+  min-width: 480px;
+  border: none;
+  border-radius: ${0};
+  background-color: ${0};
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+  overflow: visible;
+
+  @media (max-width: ${0}px) {
+    min-width: auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    border-radius: 0;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+`)),(({theme:e})=>e.border.borderRadius),(({theme:e})=>e.colors.background),(({theme:e})=>e.breakpoints.phone)),Qo=e=>{const t=e.children,o=e.close,i=e.title,a=e.isOpen,s=Object(n.useRef)(null),c=Object(n.useRef)(null);Object(n.useEffect)((()=>(void 0!==typeof document&&(s.current=document.createElement("div"),document.body&&document.body.appendChild(s.current)),()=>{void 0!==typeof document&&document.body&&document.body.removeChild(s.current)})),[]);const l=at(Qt(a),2),d=l[0],u=l[1],m=Object(n.useCallback)((()=>{u(o)}),[u,o]),p=Object(n.useCallback)((e=>{var t;null!==(t=c.current)&&void 0!==t&&t.contains(e.target)||m()}),[m]);return s.current&&a?b.a.createPortal(r.a.createElement(Ho,{onClick:p,visible:d},r.a.createElement(Ko,{ref:c},r.a.createElement(Vo,{close:m,title:i}),r.a.createElement(qo,null,t))),s.current):null};let Yo;const Go=()=>{const e=vt(),t=e.onError,o=e.locale,r=Object(n.useRef)(),i=at(Object(n.useState)(!!Yo),2),a=i[0],s=i[1],c=at(Object(n.useState)(Yo||{}),2),l=c[0],d=c[1],u=Object(n.useCallback)((e=>{d(e),Yo=e,s(!0)}),[d,s]),m=Object(n.useCallback)((()=>{d({}),Yo=void 0,s(!1)}),[d,s]);return Object(n.useEffect)((()=>{let e=!0;const n=["en","en-US"].includes(o);return n||r.current===o?n&&u({}):(m(),async function(){try{const t=await fetch(`https://translations.coinbase.com/aab9bdc6d/latest/${o}/cookie-manager-messages.json`);if(!t.ok)throw new Error("Missing translations");{const o=await t.json(),n={};Object.keys(o).forEach((e=>{n[e]=o[e].defaultMessage})),e&&u(n)}}catch(n){t(n),e&&u({})}}()),r.current=o,()=>{e=!1}}),[t,o]),[a,l]},Xo=({children:e,theme:t})=>{const o=vt().locale,n=at(Go(),2),i=n[0],a=n[1];return i?r.a.createElement(d.a,{messages:a||{},locale:o},r.a.createElement(u.c,{theme:t},e)):null};function en(e,t){switch(t.value){case!0:return e.consent.includes(t.name)?e:rt(rt({},e),{},{consent:[...e.consent,t.name]});case!1:return rt(rt({},e),{},{consent:e.consent.filter((e=>e!==t.name))});default:return e}}const tn=e=>[r.a.createElement(eo,{key:"CookieLink",color:"primary"},e)],on=({onClose:e,isOpen:t})=>{const o=vt(),i=o.region,a=o.log;Object(n.useEffect)((()=>{t&&a("cookie_consent_manager_viewed")}),[t]);const s=Object(l.a)().formatMessage,c=io(),d=Wt(),u=d.consent,m=at(Object(n.useReducer)(en,{consent:u,region:i}),2),p=m[0],f=m[1],g=Zt(),h=Jt(),b=Object(n.useCallback)((e=>{const t={};return gt.forEach((o=>{t[o]=e.consent.includes(o)?1:0})),t}),[]),y=Object(n.useCallback)((()=>{h(p),a("cookie_consent_manager_save_tapped",b(p)),e()}),[h,e,p,a,b]),k=Object(n.useCallback)((()=>{h(d),a("cookie_consent_manager_dismissed",b(d)),e()}),[h,d,e,a,b]);return r.a.createElement(Qo,{close:k,isOpen:t,title:s(c.modalTitle)},r.a.createElement(cn,null,r.a.createElement(Oo,null,s(c.modalDescription,{link:tn})),r.a.createElement(to,{size:"md"}),r.a.createElement(Oo,{bold:!0},s(c.manageCookies)),r.a.createElement(to,{size:"sm"}),r.a.createElement(an,null,gt.map((e=>r.a.createElement(rn,{key:e},r.a.createElement(Uo,{name:e,disabled:g.includes(e),checked:p.consent.includes(e),onChange:t=>f({name:e,value:t})},r.a.createElement(Po,{name:e})))))),r.a.createElement(to,{size:"lg"}),r.a.createElement(sn,null,r.a.createElement(Yt,{onClick:y,large:!0},s(c.saveCTA)))))},nn=e=>{let t=e.theme,o=mt(e,ot);return r.a.createElement(Xo,{theme:t||Vt},r.a.createElement(on,o))},rn=u.f.div.withConfig({displayName:"esm__CheckBoxContainer",componentId:"sc-1rxtuo-33"})(Qe||(Qe=ie||(ie=et`
+  width: 50%;
+  margin-bottom: ${0};
+  @media (max-width: ${0}px) {
+    width: 100%;
+  }
+`)),(({theme:e})=>e.size.md),(({theme:e})=>e.breakpoints.phone)),an=u.f.div.withConfig({displayName:"esm__CategoryContainer",componentId:"sc-1rxtuo-34"})(Ye||(Ye=ae||(ae=et`
+  display: flex;
+  flex-wrap: wrap;
+`))),sn=u.f.div.withConfig({displayName:"esm__ButtonContainer",componentId:"sc-1rxtuo-35"})(Ge||(Ge=se||(se=et`
+  display: flex;
+  justify-content: center;
+`))),cn=u.f.div.withConfig({displayName:"esm__Container",componentId:"sc-1rxtuo-36"})(Xe||(Xe=ce||(ce=et`
+  display: flex;
+  flex-direction: column;
+  max-width: 560px;
+`))),ln=Object(n.memo)(on),dn=({theme:e,isExperimentalBanner:t})=>{const o=(()=>{const e=Lt(),t=at(Object(n.useState)(!1),2),o=t[0],r=t[1],i=at(Object(n.useState)(!!e),2),a=i[0],s=i[1],c=vt(),l=c.region,d=c.config,u=Ot(l),m=$t(l,d),p=Jt();return{hasDismissed:a,handleBannerDismiss:Object(n.useCallback)((()=>{u&&!e&&p(m),s(!0)}),[m,u,p,e]),handleAcceptAll:Object(n.useCallback)((()=>{const e=$t("DEFAULT",d);p({region:l,consent:e.consent}),s(!0)}),[d,p,l]),closeModal:Object(n.useCallback)((()=>{s(!0),r(!1)}),[r,s]),isModalOpen:o,openModal:Object(n.useCallback)((()=>{r(!0)}),[r])}})(),i=o.hasDismissed,a=o.handleBannerDismiss,s=o.handleAcceptAll,c=o.closeModal,l=o.openModal,d=o.isModalOpen;return r.a.createElement(Xo,{theme:e||Vt},r.a.createElement(ln,{onClose:c,isOpen:d}),t?r.a.createElement(Eo,{onDismiss:a,onAccept:s,showPreferencesModal:l,hasDismissed:i}):r.a.createElement(bo,{onDismiss:a,onAccept:s,showPreferencesModal:l,hasDismissed:i}))},un=Object(n.memo)(dn)}}]);
+//# sourceMappingURL=cbcookiemanager-a0d1600c722b9393a48f.chunk.js.map
